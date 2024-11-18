@@ -1,0 +1,99 @@
+/* FONTS */
+@font-face {
+    font-family: Coolvetica;
+    src: url(../fonts/coolvetica_rg.ttf);
+}
+
+/* @font-face */
+
+/* CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--colorWhite);
+    font-family: Coolvetica;
+}
+
+/* Global CSS */
+:root{
+    --colorBlack: #1a1a1a;
+    --colorWhite: #fefefa;
+    --colorBlue: #0069ff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--colorBlack);
+}
+
+.section{
+    width: 100%;
+    padding: 100px 0;
+}
+
+.container{
+    width: 100%;
+    padding: 0 10%;
+}
+
+h1{
+    font-size: 220px;
+    text-align: center;
+    /* position: absolute; */
+}
+
+p{
+    font-size: 20px;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* header */
+
+.header__section{
+    padding: 20px 0;
+    position: fixed;
+}
+
+.header_nav{
+    padding: 8px 10px ;
+    background-color: rgb(49, 49, 49);
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.header_nav div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header_link{
+    padding: 10px 24px;
+    border-radius: 50px;
+}
+
+.header_link--active{
+    background-color: var(--colorBlue);
+}
+
+.header_link--logo{
+    font-size: 26px;
+}
+
+/* banner */
+.banner__section{
+    padding: 70px 0 ;
+    width: 100vw;
+    height: 100vh;
+}
