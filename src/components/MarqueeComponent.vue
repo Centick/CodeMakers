@@ -74,7 +74,7 @@
         font: 16px / 1.4 sans-serif;
     }
     .wrap{
-        transform: rotate(-6deg);
+        transform: rotate(-4deg);
     }
     h1 {
         font-size: 2em;
