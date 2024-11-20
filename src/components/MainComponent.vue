@@ -184,6 +184,3 @@
     import ResumeComponentVue from '@/components/ResumeComponent.vue';
 
 </script>
-
-<style> 
-</style>
