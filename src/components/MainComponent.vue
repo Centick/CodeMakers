@@ -55,7 +55,10 @@
                         <h4>Занятие Web-разработкой</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="history_chronology_block">1</div>
+                    <div class="history_chronology_block">
+                        1
+                        <div class="points"></div>
+                    </div>
                     <div class="history_block">
                         <h4>Знакомство с ребятами</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -67,7 +70,10 @@
                         <h4>Изучение элементов</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="history_chronology_block">2</div>
+                    <div class="history_chronology_block">
+                        2
+                        <div class="points"></div>
+                    </div>
                     <div class="history_block">
                         <h4>Первые соревнования</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -79,7 +85,10 @@
                         <h4>Пройгрышь на соревнованиях</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="history_chronology_block">3</div>
+                    <div class="history_chronology_block">
+                        3
+                        <div class="points"></div>
+                    </div>
                     <div class="history_block">
                         <h4>Большая мативация</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -91,7 +100,10 @@
                         <h4>Окончание изучения базы</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="history_chronology_block">4</div>
+                    <div class="history_chronology_block">
+                        4
+                        <div class="points"></div>
+                    </div>
                     <div class="history_block">
                         <h4>Предложение на 1-ый хакатон</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -103,7 +115,10 @@
                         <h4>Победа на хакатоне</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="history_chronology_block">5</div>
+                    <div class="history_chronology_block">
+                        5
+                        <div class="points"></div>
+                    </div>
                     <div class="history_block">
                         <h4>Изучение фреймворков</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -114,7 +129,10 @@
                         <h4>Различные хакатоны</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="history_chronology_block">6</div>
+                    <div class="history_chronology_block">
+                        6
+                        <div class="points"></div>
+                    </div>
                     <div class="history_block">
                         <h4>Предложения о работе</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
