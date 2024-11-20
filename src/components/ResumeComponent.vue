@@ -12,10 +12,6 @@
                     <div class="skills_block-skils">
                         <img src="../assets/img/skills/django.png" alt="img">
                     </div>
-                    <!-- GitHub -->
-                    <div class="skills_block-skils">
-                        <img src="../assets/img/skills/django.png" alt="img">
-                    </div>
                     <!-- Python -->
                     <div class="skills_block-skils">
                         <img src="../assets/img/skills/django.png" alt="img">

@@ -83,11 +83,11 @@ p{
     border-radius: 50px;
     font-size: 20px;
     cursor: pointer;
+    transition: background-color .3s ease-out;
 }
 
 .btn:hover{
     background-color: var(--colorBlue);
-    transition: background-color .8 ease-out;
 }
 
 .link{
