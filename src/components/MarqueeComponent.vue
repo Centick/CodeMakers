@@ -47,21 +47,21 @@
                 <div class="item">United</div>
                 <div class="item">Friendly</div>
                 <div class="item">Communication</div>
-        </div>
-        <div aria-hidden="true" class="items marquee reverce">
-            <div class="item">Soft Skill</div>
-            <div class="item">Hard Skills</div>
-            <div class="item">Clear</div>
-            <div class="item">Quickly</div>
-            <div class="item">CodeMakers</div>
-            <div class="item">Best</div>
-            <div class="item">Perseverance</div>
-            <div class="item">Smart</div>
-            <div class="item">Teamwork</div>
-            <div class="item">United</div>
-            <div class="item">Friendly</div>
-            <div class="item">Communication</div>
-        </div>
+            </div>
+            <div aria-hidden="true" class="items marquee reverce">
+                <div class="item">Soft Skill</div>
+                <div class="item">Hard Skills</div>
+                <div class="item">Clear</div>
+                <div class="item">Quickly</div>
+                <div class="item">CodeMakers</div>
+                <div class="item">Best</div>
+                <div class="item">Perseverance</div>
+                <div class="item">Smart</div>
+                <div class="item">Teamwork</div>
+                <div class="item">United</div>
+                <div class="item">Friendly</div>
+                <div class="item">Communication</div>
+            </div>
         </div>
     </div>
 </template>
@@ -111,14 +111,12 @@
         margin: 10px 0;
         transition: all 0.1s ease-in-out;
     }
-
     .marquee {
         animation: scroll 20s linear infinite;
     }
     .reverce {
         animation-direction: reverse;
     }
-
     .perfscan {
         margin: 20px 0;
         text-align: center;
