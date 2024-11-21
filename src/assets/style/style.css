@@ -272,8 +272,8 @@ p{
 
 .skills_block-skils > img{
     width: 50%;
-    margin-top: 3px;
-    margin-right: 6px;
+    /* margin-top: 3px;
+    margin-right: 6px; */
     z-index: 3;
 }
 

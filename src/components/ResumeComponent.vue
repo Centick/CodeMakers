@@ -9,77 +9,8 @@
                     <br><br>
                     <h3>Скилы</h3>
                     <div class="skills_wrap-skils">
-                        <!-- Git -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- NodeJS -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- Python -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- Django -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- JavaScript -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- jOquery -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- TypeScript -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- Vue.js -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- Laravel -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- HTML -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- CSS -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- REST API -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- PHP -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- MySQL -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- SQLite -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- Docker -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- Figma -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
-                        </div>
-                        <!-- Photoshop -->
-                        <div class="skills_block-skils">
-                            <img src="../assets/img/skills/django.png" alt="img">
+                        <div class="skills_block-skils" v-for="skills_datum in skills_data">
+                            <img :src="`src/assets/img/skills/${skills_datum.icon}`" alt="img">
                         </div>
                     </div>
                 </div>
@@ -139,8 +70,31 @@
     </div>
 </template>
 
-<script>
+<script setup>
+    const skills_data = [
+        { title: 'Git', icon: 'skills_logo_5.png', description: '', },
+        { title: 'NodeJS', icon: 'skills_logo_3.png', description: '', },
+        { title: 'Python', icon: 'skills_logo_4.png', description: '', },
+        { title: 'Django', icon: 'skills_logo_1.png', description: '', },
+        { title: 'JavaScript', icon: 'skills_logo_16.png', description: '', },
+        { title: 'JQuery', icon: 'skills_logo_2.png', description: '', },
+        { title: 'TypeScript', icon: 'skills_logo_17.png', description: '', },
+        { title: 'Vue.js', icon: 'skills_logo_14.png', description: '', },
+        { title: 'Laravel', icon: 'skills_logo_12.png', description: '', },
+        { title: 'HTML', icon: 'skills_logo_10.png', description: '', },
+        { title: 'CSS', icon: 'skills_logo_11.png', description: '', },
+        { title: 'REST API', icon: 'skills_logo_18.png', description: '', },
+        { title: 'PHP', icon: 'skills_logo_15.png', description: '', },
+        { title: 'MySQL', icon: 'skills_logo_9.png', description: '', },
+        { title: 'SQLite', icon: 'skills_logo_9.png', description: '', },
+        { title: 'Docker', icon: 'skills_logo_8.png', description: '', },
+        { title: 'Figma', icon: 'skills_logo_7.png', description: '', },
+        { title: 'Photoshop', icon: 'skills_logo_6.png', description: '', },
+    ]
 
+    const path_compiler = (root, file_name) => {
+        return `${root}/${file_name}`
+    }
 </script>
 
 <style>
