@@ -32,6 +32,8 @@ html{
 
 body{
     background-color: var(--colorBlack);
+    background-image: url('../img/fone.png');
+    background-size: 100px auto;
     overflow-x: hidden;
 }
 
