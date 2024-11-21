@@ -153,12 +153,92 @@
 
     <!-- наши проекты -->
     <div class="section">
-        <div class="container">
+        <div class="container project__container">
             <h2><span class="blue">_</span>Наши проекты</h2>
-            <!-- тут илья сам сам { -->
-                <br><br>
-                <p>тут илюша чет-то сварганит...</p>
-            <!-- } -->
+            <div class="choosing-person_wrap">
+                <span class="person-btn person-btn--active">Утяцкий В</span>
+                <span class="person-btn">Федосенко И</span>
+                <span class="person-btn">Черных В</span>
+                <span class="person-btn">Все</span>
+            </div>
+            <div class="project__main_wrap">
+                <div class="project__main_block">
+                    <img src="../assets/img/project/Utyatskiy/ut1-project.jpg" alt="project">
+                    <h5>Развитие бизнеса</h5>
+                    <div class="project__skills">
+                        <div class="project__skill">Vue.js</div>
+                        <div class="project__skill">TypeScript</div>
+                        <div class="project__skill">HTML</div>
+                        <div class="project__skill">CSS</div>
+                    </div>
+                </div>
+
+                <div class="project__main_block">
+                    <img src="../assets/img/project/Utyatskiy/ut2-project.jpg" alt="project">
+                    <h5>WoodPecker</h5>
+                    <div class="project__skills">
+                        <div class="project__skill">Vue.js</div>
+                        <div class="project__skill">TypeScript</div>
+                        <div class="project__skill">HTML</div>
+                        <div class="project__skill">CSS</div>
+                    </div>
+                </div>
+
+                <div class="project__main_block">
+                    <img src="../assets/img/project/Utyatskiy/ut3-project.jpg" alt="project">
+                    <h5>MoonBase</h5>
+                    <div class="project__skills">
+                        <div class="project__skill">Vue.js</div>
+                        <div class="project__skill">TypeScript</div>
+                        <div class="project__skill">HTML</div>
+                        <div class="project__skill">CSS</div>
+                    </div>
+                </div>
+
+                <div class="project__main_block">
+                    <img src="../assets/img/project/Utyatskiy/ut4-project.jpg" alt="project">
+                    <h5>Black Taxi</h5>
+                    <div class="project__skills">
+                        <div class="project__skill">Vue.js</div>
+                        <div class="project__skill">TypeScript</div>
+                        <div class="project__skill">HTML</div>
+                        <div class="project__skill">CSS</div>
+                    </div>
+                </div>
+
+                <div class="project__main_block">
+                    <img src="../assets/img/project/Utyatskiy/ut5-project.jpeg" alt="project">
+                    <h5>Логопед</h5>
+                    <div class="project__skills">
+                        <div class="project__skill">Vue.js</div>
+                        <div class="project__skill">TypeScript</div>
+                        <div class="project__skill">HTML</div>
+                        <div class="project__skill">CSS</div>
+                    </div>
+                </div>
+
+                <div class="project__main_block">
+                    <img src="../assets/img/project/Utyatskiy/ut6-project.jpg" alt="project">
+                    <h5>Образовательный маршрут</h5>
+                    <div class="project__skills">
+                        <div class="project__skill">Vue.js</div>
+                        <div class="project__skill">TypeScript</div>
+                        <div class="project__skill">HTML</div>
+                        <div class="project__skill">CSS</div>
+                    </div>
+                </div>
+
+                <div class="project__main_block">
+                    <img src="../assets/img/project/Utyatskiy/ut7-project.jpg" alt="project">
+                    <h5>Машенничество</h5>
+                    <div class="project__skills">
+                        <div class="project__skill">Vue.js</div>
+                        <div class="project__skill">TypeScript</div>
+                        <div class="project__skill">HTML</div>
+                        <div class="project__skill">CSS</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -194,7 +274,13 @@
         </div>
     </div>
 
-    <div class=""></div>
+    <div class="section">
+        <div class="container footer__container">
+            <h2 class="footer_title">Спасибо за все!</h2>
+            <p class="footer_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quisquam veniam a consequuntur, possimus perferendis! Quidem voluptatum quos sapiente cumque explicabo ut molestias voluptates! Sunt possimus tempore quidem autem animi.</p>
+        </div>
+
+    </div>
 </template>
 
 <script setup >

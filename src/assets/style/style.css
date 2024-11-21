@@ -32,7 +32,7 @@ html{
 
 body{
     background-color: var(--colorBlack);
-    background-image: url('../img/fone.png');
+    /* background-image: url('../img/fone.png'); */
     background-size: 100px auto;
     overflow-x: hidden;
 }
@@ -67,6 +67,11 @@ h3{
 
 h4{
     font-size: 38px;
+    letter-spacing: 1px
+}
+
+h5{
+    font-size: 30px;
     letter-spacing: 1px
 }
 
@@ -402,6 +407,74 @@ p{
     gap: 150px;
 }
 
+/* project */
+.project__container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.choosing-person_wrap{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    border-radius: 50px;
+    padding: 8px 10px;
+    width: fit-content;
+}
+
+.person-btn{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+/* .person-btn:hover{
+    outline: var(--colorBlue) 2px solid;
+} */
+
+.person-btn--active{
+    background-color: var(--colorBlue);
+    outline: var(--colorBlue) 2px solid;    
+}
+
+.project__main_wrap{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.project__main_block{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project__main_block > img{
+    width: 100%;
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+.project__main_block > h5{
+    padding: 0 5px;
+}
+
+.project__skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project__skill{
+    font-size: 18px;
+    padding: 7px 14px;
+    border-radius: 50px;
+    outline: 1px solid rgb(49, 49, 49);
+}
+
 /* connection */
 .connection__container{
     display: flex;
@@ -478,4 +551,17 @@ p{
 .connection_pluses_block > img{
     width: 40px;
     height: 40px;
+}
+
+/* footer */
+.footer__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.footer_text{
+    margin-top: 60px;
+    grid-area: 2 / 2;
+    font-size: 24px;
 }
