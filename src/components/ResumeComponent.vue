@@ -1,5 +1,5 @@
 <template>
-    <!-- уменя и опыт -->
+    <!-- у меня и опыт -->
     <div class="section skills__section">
         <div class="container skills__container">
             <div class="skills_block--sticky_parent">
@@ -100,9 +100,11 @@
         ];
     };
 
-    const path_compiler = (root: string, file_name: string) => {
-        return `${root}/${file_name}`;
-    }
+    getSkillsData();
+
+    // const path_compiler = (root: string, file_name: string) => {
+    //     return `${root}/${file_name}`;
+    // }
 </script>
 
 <style>
