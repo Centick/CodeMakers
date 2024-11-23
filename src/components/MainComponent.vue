@@ -156,10 +156,11 @@
         <div class="container project__container">
             <h2><span class="blue">_</span>Наши проекты</h2>
             <div class="choosing-person_wrap">
-                <span class="person-btn person-btn--active">Утяцкий В</span>
-                <span class="person-btn">Федосенко И</span>
-                <span class="person-btn">Черных В</span>
-                <span class="person-btn">Все</span>
+                <span class="person-cursor" :style="{ width: `${personCursor.width}px`, left: `${personCursor.left}px` }"></span>
+                <span @click="setPersonCursor" :ref="setAutoClickPerson" class="person-btn">Утяцкий В</span>
+                <span @click="setPersonCursor" class="person-btn">Федосенко И</span>
+                <span @click="setPersonCursor" class="person-btn">Черных В</span>
+                <span @click="setPersonCursor" class="person-btn">Все</span>
             </div>
             <div class="project__main_wrap">
                 <div class="project__main_block">
@@ -287,4 +288,28 @@
     import MarqueeComponent from '@/components/MarqueeComponent.vue';
     import ResumeComponentVue from '@/components/ResumeComponent.vue';
 
+    import { reactive, ref, onMounted } from 'vue';
+
+    const personCursor = reactive({
+        width: 0,
+        left: 0,
+    })
+    const autoClickPerson = ref(null)
+    
+    function setAutoClickPerson(el) {
+        autoClickPerson.value = el
+    }
+
+    function setPersonCursor(e) {
+        if (personCursor.width != e.target.offsetWidth && personCursor.left != e.target.offsetLeft) {
+            personCursor.width = e.target.offsetWidth
+            personCursor.left = e.target.offsetLeft
+
+            /* СЮДА ДОПИСАТЬ ЛОГИКУ ПОКАЗА ПРОЕКТОВ */
+        }
+    }
+
+    onMounted(() => {
+        autoClickPerson.value.click()
+    })
 </script>

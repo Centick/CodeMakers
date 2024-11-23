@@ -415,6 +415,8 @@ p{
 }
 
 .choosing-person_wrap{
+    position: relative;
+    inset: 0;
     display: flex;
     gap: 18px;
     align-items: center;
@@ -424,11 +426,24 @@ p{
     width: fit-content;
 }
 
+.person-cursor {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    /* width: 129px; */
+    height: 44px;
+    border-radius: 50px;
+    background-color: #0069ff;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+}
+
 .person-btn{
     cursor: pointer;
     font-size: 20px;
     padding: 10px 20px;
     border-radius: 50px;
+    z-index: 2;
 }
 
 /* .person-btn:hover{
