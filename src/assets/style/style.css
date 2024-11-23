@@ -253,13 +253,11 @@ p{
     transition: .5s;
 }
 
-.skills_block-skils:hover{
+.skills_block-skils:hover, .skills_block-skils_active{
     border: 3px solid var(--colorBlue);
-    transition: .5s;
 }
 
-
-.skills_block-skils:before {
+.skills_block-skils::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -272,7 +270,7 @@ p{
     z-index: 2;
   }
   
-  .skills_block-skils:hover:before {
+  .skills_block-skils:hover::before, .skills_block-skils_active::before {
     transform: scale(100);
     transition: .5s;
   }

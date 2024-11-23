@@ -288,30 +288,34 @@
     import MarqueeComponent from '@/components/MarqueeComponent.vue';
     import AccordionComponent from '@/components/AccordionComponent.vue';
     import ResumeComponent from '@/components/ResumeComponent.vue';
-
     import {reactive, ref, onMounted, type Ref} from 'vue';
 
+    // Works Cursor Position
     const personCursor = reactive({
         width: 0,
         left: 0,
     });
 
+    // Auto Click Works Element
     const autoClickPerson: Ref<any> = ref(null);
-    
+
+    // Sets AutoClickPerson Variable on Needed Element
     function setAutoClickPerson(el: HTMLElement): undefined {
         autoClickPerson.value = el;
     }
 
+    // Change Works Cursor on Click
     function setPersonCursor(e: any): void {
         if (personCursor.width != e.target.offsetWidth && personCursor.left != e.target.offsetLeft) {
             personCursor.width = e.target.offsetWidth
             personCursor.left = e.target.offsetLeft
 
-            /* СЮДА ДОПИСАТЬ ЛОГИКУ ПОКАЗА ПРОЕКТОВ */
+            console.log();
         }
     }
 
+    // On Mounted Clicks Default Cursor Object
     onMounted(() => {
-        autoClickPerson.value.click()
+        autoClickPerson.value.click();
     })
 </script>
