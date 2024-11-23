@@ -157,86 +157,17 @@
             <h2><span class="blue">_</span>Наши проекты</h2>
             <div class="choosing-person_wrap">
                 <span class="person-cursor" :style="{ width: `${personCursor.width}px`, left: `${personCursor.left}px` }"></span>
-                <span @click="setPersonCursor" :ref="setAutoClickPerson" class="person-btn">Утяцкий В</span>
-                <span @click="setPersonCursor" class="person-btn">Федосенко И</span>
-                <span @click="setPersonCursor" class="person-btn">Черных В</span>
-                <span @click="setPersonCursor" class="person-btn">Все</span>
+                <span data-author="utyatskiy" @click="setPersonCursor" :ref="setAutoClickPerson" class="person-btn">Утяцкий В</span>
+                <span data-author="fedosenko" @click="setPersonCursor" class="person-btn">Федосенко И</span>
+                <span data-author="chernyh" @click="setPersonCursor" class="person-btn">Черных В</span>
+                <span data-author="all" @click="setPersonCursor" class="person-btn">Все</span>
             </div>
             <div class="project__main_wrap">
-                <div class="project__main_block">
-                    <img src="../assets/img/project/Utyatskiy/ut1-project.jpg" alt="project">
-                    <h5>Развитие бизнеса</h5>
+                <div class="project__main_block" v-for="project in current_projects">
+                    <img :src="`/img/projects/${project.author}/${project.img}`" :key="project.id" :alt="project.title">
+                    <h5>{{ project.title }}</h5>
                     <div class="project__skills">
-                        <div class="project__skill">Vue.js</div>
-                        <div class="project__skill">TypeScript</div>
-                        <div class="project__skill">HTML</div>
-                        <div class="project__skill">CSS</div>
-                    </div>
-                </div>
-
-                <div class="project__main_block">
-                    <img src="../assets/img/project/Utyatskiy/ut2-project.jpg" alt="project">
-                    <h5>WoodPecker</h5>
-                    <div class="project__skills">
-                        <div class="project__skill">Vue.js</div>
-                        <div class="project__skill">TypeScript</div>
-                        <div class="project__skill">HTML</div>
-                        <div class="project__skill">CSS</div>
-                    </div>
-                </div>
-
-                <div class="project__main_block">
-                    <img src="../assets/img/project/Utyatskiy/ut3-project.jpg" alt="project">
-                    <h5>MoonBase</h5>
-                    <div class="project__skills">
-                        <div class="project__skill">Vue.js</div>
-                        <div class="project__skill">TypeScript</div>
-                        <div class="project__skill">HTML</div>
-                        <div class="project__skill">CSS</div>
-                    </div>
-                </div>
-
-                <div class="project__main_block">
-                    <img src="../assets/img/project/Utyatskiy/ut4-project.jpg" alt="project">
-                    <h5>Black Taxi</h5>
-                    <div class="project__skills">
-                        <div class="project__skill">Vue.js</div>
-                        <div class="project__skill">TypeScript</div>
-                        <div class="project__skill">HTML</div>
-                        <div class="project__skill">CSS</div>
-                    </div>
-                </div>
-
-                <div class="project__main_block">
-                    <img src="../assets/img/project/Utyatskiy/ut5-project.jpeg" alt="project">
-                    <h5>Логопед</h5>
-                    <div class="project__skills">
-                        <div class="project__skill">Vue.js</div>
-                        <div class="project__skill">TypeScript</div>
-                        <div class="project__skill">HTML</div>
-                        <div class="project__skill">CSS</div>
-                    </div>
-                </div>
-
-                <div class="project__main_block">
-                    <img src="../assets/img/project/Utyatskiy/ut6-project.jpg" alt="project">
-                    <h5>Образовательный маршрут</h5>
-                    <div class="project__skills">
-                        <div class="project__skill">Vue.js</div>
-                        <div class="project__skill">TypeScript</div>
-                        <div class="project__skill">HTML</div>
-                        <div class="project__skill">CSS</div>
-                    </div>
-                </div>
-
-                <div class="project__main_block">
-                    <img src="../assets/img/project/Utyatskiy/ut7-project.jpg" alt="project">
-                    <h5>Машенничество</h5>
-                    <div class="project__skills">
-                        <div class="project__skill">Vue.js</div>
-                        <div class="project__skill">TypeScript</div>
-                        <div class="project__skill">HTML</div>
-                        <div class="project__skill">CSS</div>
+                        <div class="project__skill" v-for="skill in project.skills">{{ skill }}</div>
                     </div>
                 </div>
             </div>
@@ -289,6 +220,7 @@
     import AccordionComponent from '@/components/AccordionComponent.vue';
     import ResumeComponent from '@/components/ResumeComponent.vue';
     import {reactive, ref, onMounted, type Ref} from 'vue';
+    import type {Project} from "@/types";
 
     // Works Cursor Position
     const personCursor = reactive({
@@ -304,15 +236,46 @@
         autoClickPerson.value = el;
     }
 
-    // Change Works Cursor on Click
+    // Change Works Cursor And Current Projects Array on Click
     function setPersonCursor(e: any): void {
         if (personCursor.width != e.target.offsetWidth && personCursor.left != e.target.offsetLeft) {
             personCursor.width = e.target.offsetWidth
             personCursor.left = e.target.offsetLeft
 
-            console.log();
+
+            if(e.target.dataset.author === 'all'){
+                current_projects.value = Array.from(projects.value);
+            }
+            else{
+                current_projects.value = Array.from(projects.value.filter((project: Project) => {
+                    return project.author === e.target.dataset.author;
+                }));
+            }
         }
     }
+
+    // Array of Current Picked Projects
+    const current_projects: Ref<Project[]> = ref([{id: 0, title: '', img: '', skills: [], author: ''}]);
+
+    // Array of All Projects
+    const projects: Ref<Project[]> = ref([{id: 0, title: '', img: '', skills: [], author: ''}]);
+
+    // Function For future Backend
+    function getProjects(): void {
+        projects.value = [
+            { id: 1, title: "Бизнес", img: '1.png', skills: ['Vue.js', 'TypeScript', 'HTML', 'CSS'], author: 'utyatskiy' },
+            { id: 2, title: "WoodPecker", img: '2.png', skills: ['Vue.js', 'TypeScript', 'HTML', 'CSS'], author: 'utyatskiy' },
+            { id: 3, title: "MoonBase", img: '3.png', skills: ['Vue.js', 'TypeScript', 'HTML', 'CSS'], author: 'utyatskiy' },
+            { id: 4, title: "BlackTaxi", img: '4.png', skills: ['Vue.js', 'TypeScript', 'HTML', 'CSS'], author: 'utyatskiy' },
+            { id: 5, title: "Логопед", img: '5.png', skills: ['Vue.js', 'TypeScript', 'HTML', 'CSS'], author: 'utyatskiy' },
+            { id: 6, title: "Образовательный маршрут", img: '6.png', skills: ['Vue.js', 'TypeScript', 'HTML', 'CSS'], author: 'utyatskiy' },
+            { id: 7, title: "Мошенничество", img: '7.png', skills: ['Vue.js', 'TypeScript', 'HTML', 'CSS'], author: 'utyatskiy' },
+            { id: 8, title: "Блокада Ленинграда", img: '8.png', skills: ['Vue.js', 'TypeScript', 'HTML', 'CSS'], author: 'utyatskiy' },
+        ];
+    }
+
+    // Get All Projects
+    getProjects();
 
     // On Mounted Clicks Default Cursor Object
     onMounted(() => {
