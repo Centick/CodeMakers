@@ -42,7 +42,7 @@
     </div>
 
     <!-- наше резюме -->
-    <ResumeComponentVue/>
+    <ResumeComponent/>
 
     <!-- История команды -->
     <div class="section">
@@ -244,7 +244,7 @@
     </div>
 
     <!-- свяжитесь с нами -->
-    <div class="section ">
+    <div class="section">
         <div class="container connection__container">
             <h2><span class="blue">_</span>Свяжитесь с нами</h2>
             <div class="connection__main-wrap">
@@ -274,7 +274,7 @@
             </div>
         </div>
     </div>
-
+    <AccordionComponent />
     <div class="section">
         <div class="container footer__container">
             <h2 class="footer_title">Спасибо за все!</h2>
@@ -284,23 +284,25 @@
     </div>
 </template>
 
-<script setup >
+<script setup lang="ts">
     import MarqueeComponent from '@/components/MarqueeComponent.vue';
-    import ResumeComponentVue from '@/components/ResumeComponent.vue';
+    import AccordionComponent from '@/components/AccordionComponent.vue';
+    import ResumeComponent from '@/components/ResumeComponent.vue';
 
-    import { reactive, ref, onMounted } from 'vue';
+    import {reactive, ref, onMounted, type Ref} from 'vue';
 
     const personCursor = reactive({
         width: 0,
         left: 0,
-    })
-    const autoClickPerson = ref(null)
+    });
+
+    const autoClickPerson: Ref<any> = ref(null);
     
-    function setAutoClickPerson(el) {
-        autoClickPerson.value = el
+    function setAutoClickPerson(el: HTMLElement): undefined {
+        autoClickPerson.value = el;
     }
 
-    function setPersonCursor(e) {
+    function setPersonCursor(e: any): void {
         if (personCursor.width != e.target.offsetWidth && personCursor.left != e.target.offsetLeft) {
             personCursor.width = e.target.offsetWidth
             personCursor.left = e.target.offsetLeft

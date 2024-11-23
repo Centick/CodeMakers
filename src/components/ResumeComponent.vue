@@ -70,30 +70,38 @@
     </div>
 </template>
 
-<script setup>
-    const skills_data = [
-        { title: 'Git', icon: 'skills_logo_5.png', description: '', },
-        { title: 'NodeJS', icon: 'skills_logo_3.png', description: '', },
-        { title: 'Python', icon: 'skills_logo_4.png', description: '', },
-        { title: 'Django', icon: 'skills_logo_1.png', description: '', },
-        { title: 'JavaScript', icon: 'skills_logo_16.png', description: '', },
-        { title: 'JQuery', icon: 'skills_logo_2.png', description: '', },
-        { title: 'TypeScript', icon: 'skills_logo_17.png', description: '', },
-        { title: 'Vue.js', icon: 'skills_logo_14.png', description: '', },
-        { title: 'Laravel', icon: 'skills_logo_12.png', description: '', },
-        { title: 'HTML', icon: 'skills_logo_10.png', description: '', },
-        { title: 'CSS', icon: 'skills_logo_11.png', description: '', },
-        { title: 'REST API', icon: 'skills_logo_18.png', description: '', },
-        { title: 'PHP', icon: 'skills_logo_15.png', description: '', },
-        { title: 'MySQL', icon: 'skills_logo_9.png', description: '', },
-        { title: 'SQLite', icon: 'skills_logo_9.png', description: '', },
-        { title: 'Docker', icon: 'skills_logo_8.png', description: '', },
-        { title: 'Figma', icon: 'skills_logo_7.png', description: '', },
-        { title: 'Photoshop', icon: 'skills_logo_6.png', description: '', },
-    ]
+<script setup lang="ts">
+    import { type Ref, ref } from "vue";
+    import { type Skill } from '@/types';
 
-    const path_compiler = (root, file_name) => {
-        return `${root}/${file_name}`
+    const skills_data: Ref<Skill[]> = ref([]);
+
+    const getSkillsData = (): void => {
+        // Function For Future Backend
+        skills_data.value = [
+            { title: 'Git', icon: 'skills_logo_5.png', description: '', },
+            { title: 'NodeJS', icon: 'skills_logo_3.png', description: '', },
+            { title: 'Python', icon: 'skills_logo_4.png', description: '', },
+            { title: 'Django', icon: 'skills_logo_1.png', description: '', },
+            { title: 'JavaScript', icon: 'skills_logo_16.png', description: '', },
+            { title: 'JQuery', icon: 'skills_logo_2.png', description: '', },
+            { title: 'TypeScript', icon: 'skills_logo_17.png', description: '', },
+            { title: 'Vue.js', icon: 'skills_logo_14.png', description: '', },
+            { title: 'Laravel', icon: 'skills_logo_12.png', description: '', },
+            { title: 'HTML', icon: 'skills_logo_10.png', description: '', },
+            { title: 'CSS', icon: 'skills_logo_11.png', description: '', },
+            { title: 'REST API', icon: 'skills_logo_18.png', description: '', },
+            { title: 'PHP', icon: 'skills_logo_15.png', description: '', },
+            { title: 'MySQL', icon: 'skills_logo_9.png', description: '', },
+            { title: 'SQLite', icon: 'skills_logo_9.png', description: '', },
+            { title: 'Docker', icon: 'skills_logo_8.png', description: '', },
+            { title: 'Figma', icon: 'skills_logo_7.png', description: '', },
+            { title: 'Photoshop', icon: 'skills_logo_6.png', description: '', },
+        ];
+    };
+
+    const path_compiler = (root: string, file_name: string) => {
+        return `${root}/${file_name}`;
     }
 </script>
 
