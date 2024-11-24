@@ -37,6 +37,11 @@ body{
     overflow-x: hidden;
 }
 
+.anchor {
+    position: absolute;
+    inset: -100px 0 auto 0;
+}
+
 .section{
     width: 100%;
     padding: 100px 0;
@@ -134,6 +139,7 @@ p{
 .header_link{
     padding: 10px 24px;
     border-radius: 50px;
+    z-index: 2;
 }
 
 .header_link--active{
@@ -434,6 +440,23 @@ p{
     background-color: #0069ff;
     z-index: 1;
     transition: all .3s ease-in-out;
+}
+
+.header-cursor {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    /* width: 129px; */
+    height: 41px;
+    border-radius: 50px;
+    background-color: #0069ff;
+    z-index: 1;
+    transition: opacity .3s cubic-bezier(.5, 0, .5, 0), left .3s ease-in-out, width .3s ease-in-out;
+}
+
+.hideHeaderCursor {
+    opacity: 0;
+    transition: opacity .3s cubic-bezier(0, .5, 0, .5), left .3s ease-in-out, width .3s ease-in-out;
 }
 
 .person-btn{

@@ -1,5 +1,6 @@
 <template>
     <!-- баннер -->
+    <span id="home" class="anchor"></span>
     <div class="section banner__section">
         <div class="container banner__container">
             <h1>CODE <br>MAKERS </h1>
@@ -14,6 +15,7 @@
     
 
     <!-- немного о команде -->
+    <span id="about" class="anchor"></span>
     <div class="section about-us__section">
         <div class="container about-us__container">
             <div class="about-us_img-wrap">
@@ -42,9 +44,11 @@
     </div>
 
     <!-- наше резюме -->
+    <span id="resume" class="anchor"></span>
     <ResumeComponent/>
 
     <!-- История команды -->
+    <span id="history" class="anchor"></span>
     <div class="section">
         <div class="container history__container">
             <h2><span class="blue">_</span>История CodeMakers</h2>
@@ -152,6 +156,7 @@
     </div>
 
     <!-- наши проекты -->
+    <span id="projects" class="anchor"></span>
     <div class="section">
         <div class="container project__container">
             <h2><span class="blue">_</span>Наши проекты</h2>
@@ -175,6 +180,7 @@
     </div>
 
     <!-- свяжитесь с нами -->
+    <span id="contacts" class="anchor"></span>
     <div class="section">
         <div class="container connection__container">
             <h2><span class="blue">_</span>Свяжитесь с нами</h2>
