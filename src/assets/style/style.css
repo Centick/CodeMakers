@@ -45,6 +45,7 @@ body{
 .section{
     width: 100%;
     padding: 100px 0;
+    position: relative;
 }
 
 .container{
@@ -56,7 +57,9 @@ h1{
     font-size: 220px;
     line-height: 200px;
     letter-spacing: 4px;
-    text-shadow: 60px 60px 3px var(--colorBlue);
+    text-shadow: 10px 10px 1px var(--colorBlue),
+    15px 15px 1px #207dff,
+    20px 20px 1px #4c96ff;
 }
 
 h2{
@@ -95,7 +98,7 @@ p{
     border-radius: 50px;
     font-size: 20px;
     cursor: pointer;
-    transition: background-color .3s ease-out;
+    transition: all .3s ease-out !important;
 }
 
 .btn:hover{
@@ -488,6 +491,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 12px;
+    text-decoration: none;
 }
 
 .project__main_block > img{
@@ -604,4 +608,9 @@ p{
     margin-top: 60px;
     grid-area: 2 / 2;
     font-size: 24px;
+}
+
+/* Typed */
+#typed_1 + span{
+    font-size: 30px;
 }
