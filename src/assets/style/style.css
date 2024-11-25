@@ -38,7 +38,7 @@ body{
 }
 
 .anchor {
-    position: absolute;
+    position: relative;
     inset: -100px 0 auto 0;
 }
 
@@ -126,17 +126,17 @@ p{
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    align-items: center;
     z-index: 10;
 }
 
 .header_nav div{
     display: flex;
     gap: 20px;
-    align-items: center;
 }
 
 .header_link{
+    display: flex;
+    align-items: center;
     padding: 10px 24px;
     border-radius: 50px;
     z-index: 2;
@@ -147,6 +147,8 @@ p{
 }
 
 .header_link--logo{
+    display: flex;
+    align-items: center;
     font-size: 26px;
 }
 
@@ -451,12 +453,12 @@ p{
     border-radius: 50px;
     background-color: #0069ff;
     z-index: 1;
-    transition: opacity .3s cubic-bezier(.5, 0, .5, 0), left .3s ease-in-out, width .3s ease-in-out;
+    transition: opacity .3s cubic-bezier(.5, 0, .5, 0), left .3s ease-in-out, width .3s ease-in-out, height .3s ease-in-out;
 }
 
 .hideHeaderCursor {
     opacity: 0;
-    transition: opacity .3s cubic-bezier(0, .5, 0, .5), left .3s ease-in-out, width .3s ease-in-out;
+    transition: opacity .3s cubic-bezier(0, .5, 0, .5), left .3s ease-in-out, width .3s ease-in-out, height .3s ease-in-out;
 }
 
 .person-btn{

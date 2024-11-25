@@ -1,6 +1,6 @@
 <template>
     <!-- баннер -->
-    <span id="home" class="anchor"></span>
+    <span ref="homeAnch" class="anchor"></span>
     <div class="section banner__section">
         <div class="container banner__container">
             <h1>CODE <br>MAKERS </h1>
@@ -15,7 +15,7 @@
     
 
     <!-- немного о команде -->
-    <span id="about" class="anchor"></span>
+    <span ref="aboutAnch" class="anchor"></span>
     <div class="section about-us__section">
         <div class="container about-us__container">
             <div class="about-us_img-wrap">
@@ -44,11 +44,11 @@
     </div>
 
     <!-- наше резюме -->
-    <span id="resume" class="anchor"></span>
+    <span ref="resumeAnch" class="anchor"></span>
     <ResumeComponent/>
 
     <!-- История команды -->
-    <span id="history" class="anchor"></span>
+    <span ref="historyAnch" class="anchor"></span>
     <div class="section">
         <div class="container history__container">
             <h2><span class="blue">_</span>История CodeMakers</h2>
@@ -156,7 +156,7 @@
     </div>
 
     <!-- наши проекты -->
-    <span id="projects" class="anchor"></span>
+    <span ref="projectsAnch" class="anchor"></span>
     <div class="section">
         <div class="container project__container">
             <h2><span class="blue">_</span>Наши проекты</h2>
@@ -180,7 +180,7 @@
     </div>
 
     <!-- свяжитесь с нами -->
-    <span id="contacts" class="anchor"></span>
+    <span ref="contactsAnch" class="anchor"></span>
     <div class="section">
         <div class="container connection__container">
             <h2><span class="blue">_</span>Свяжитесь с нами</h2>
@@ -225,8 +225,28 @@
     import MarqueeComponent from '@/components/MarqueeComponent.vue';
     import AccordionComponent from '@/components/AccordionComponent.vue';
     import ResumeComponent from '@/components/ResumeComponent.vue';
-    import {reactive, ref, onMounted, type Ref} from 'vue';
+    import {reactive, ref, defineProps, onMounted, type Ref} from 'vue';
     import type {Project} from "@/types";
+
+    const props = defineProps({
+        updateAnchors: Function
+    });
+
+    const homeAnch = ref(null);
+    const aboutAnch = ref(null);
+    const resumeAnch = ref(null);
+    const historyAnch = ref(null);
+    const projectsAnch = ref(null);
+    const contactsAnch = ref(null);
+
+    const anchors = {   
+        homeAnch: homeAnch,
+        aboutAnch: aboutAnch,
+        resumeAnch: resumeAnch,
+        historyAnch: historyAnch,
+        projectsAnch: projectsAnch,
+        contactsAnch: contactsAnch,
+    };
 
     // Works Cursor Position
     const personCursor = reactive({
@@ -285,6 +305,7 @@
 
     // On Mounted Clicks Default Cursor Object
     onMounted(() => {
+        props.updateAnchors(anchors);
         autoClickPerson.value.click();
     })
 </script>
