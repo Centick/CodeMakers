@@ -99,6 +99,7 @@ p{
     font-size: 20px;
     cursor: pointer;
     transition: all .3s ease-out !important;
+    text-decoration: none;
 }
 
 .btn:hover{
@@ -282,14 +283,12 @@ p{
   }
   
   .skills_block-skils:hover::before, .skills_block-skils_active::before {
-    transform: scale(100);
+    transform: scale(50);
     transition: .5s;
   }
 
 .skills_block-skils > img{
     width: 50%;
-    /* margin-top: 3px;
-    margin-right: 6px; */
     z-index: 3;
 }
 

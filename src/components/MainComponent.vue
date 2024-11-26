@@ -40,7 +40,7 @@
                         <p>Сольных проектов</p>
                     </div>                
                 </div>
-                <div data-aos="fade-up" class="btn">Наша ссылка →</div>
+                <a data-aos="fade-up" class="btn" href="https://vk.com/jun48?from=search">Наша ссылка →</a>
             </div>
         </div>
     </div>
@@ -348,7 +348,7 @@
         let numbers = Array.from(document.querySelectorAll('.about-us__result-block')) as HTMLElement[];
         let counted: boolean[] = [];
         let max_numbers: number[] = [];
-        const time_for_numbers: number = 500;
+        const time_for_numbers: number = 1000;
         for(let i of numbers){counted.push(false); max_numbers.push(Number(i.children[0].childNodes[0].textContent)); i.children[0].childNodes[0].textContent = '0'}
 
         let gears = Array.from(document.querySelectorAll('.about-us__main-wrap__gear')) as HTMLElement[];
