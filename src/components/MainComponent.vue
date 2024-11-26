@@ -3,8 +3,8 @@
     <span ref="homeAnch" class="anchor"></span>
     <div class="section banner__section">
         <div class="container banner__container">
-            <h1>CODE <br>MAKERS </h1>
-            <img class="banner_img" src="../assets/img/leptop.png" alt="img">
+            <h1>CODEMAKERS </h1>
+            <img class="banner_img" src="../assets/img/2.png" alt="img">
         </div>
     </div>
 

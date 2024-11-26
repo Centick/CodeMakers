@@ -1,7 +1,7 @@
 <template>
     <div class="section header__section">
         <div class="container header__container">
-            <nav class="header_nav">
+            <nav class="header_nav" :class="{'header_nav--open': isBurgerOpen}">
                 <div>
                     <span class="header-cursor" :class="{hideHeaderCursor: !headerCursor1.active}" :style="{ width: `${headerCursor1.width}px`, height: `${headerCursor1.height}px`, left: `${headerCursor1.left}px` }"></span>
                     <a class="link header_link header-section-1" @click="getClickFromHeader($event, props.anchors.homeAnch)" ref="homeHeaderBtn" href="#home">Home</a>
@@ -15,6 +15,7 @@
                     <a class="link header_link header-section-2" @click="getClickFromHeader($event, props.anchors.projectsAnch)" ref="projectsHeaderBtn" href="#projects">Проекты</a>
                     <a class="link header_link header-section-2" @click="getClickFromHeader($event, props.anchors.contactsAnch)" ref="contactsHeaderBtn" href="#contacts">Контакты</a>
                 </div>
+                <span class="burger_menu" @click="isBurgerOpen = !isBurgerOpen"></span>
             </nav>
         </div>
     </div>
@@ -129,4 +130,56 @@
         addEventListener("DOMContentLoaded", scrollChecker);
         addEventListener("resize", () => setHeaderCursor(activeBtn.value));
     })
+
+    let isBurgerOpen = ref(false)
 </script>
+
+<style scoped>
+    .burger_menu{
+        display: none;
+        background: url('../assets/img/icons/burger.svg');
+        background-position: center;
+        background-size: cover;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 1024px) {
+        .header_nav > div{
+            display: none;
+        }
+
+        .header_nav{
+            padding: 5px;
+        }
+
+        .burger_menu{
+            display: block;
+        }
+
+        .header_nav{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1px;
+        }
+
+        .header_nav--open{
+            height: fit-content;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-radius: 35px;
+            justify-items: center;
+            transition: all .4s linear;
+        }
+
+        .header_nav--open > div{
+            display: block;
+        }
+
+        .header_nav--open > div > .header_link {
+            border: none;
+        }
+    }
+</style>
