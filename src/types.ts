@@ -11,4 +11,5 @@ export type Project = {
     img: string;
     skills: string[];
     author: string;
+    link: string;
 };

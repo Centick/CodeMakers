@@ -11,11 +11,14 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "primevue": "^4.2.3",
+    "typed.js": "^2.1.0",
     "vue": "^3.5.12"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
+    "@types/aos": "^3.0.7",
     "@types/node": "^22.9.0",
     "@vitejs/plugin-vue": "^5.1.4",
     "@vue/tsconfig": "^0.5.1",

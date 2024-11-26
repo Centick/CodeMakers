@@ -38,13 +38,14 @@ body{
 }
 
 .anchor {
-    position: absolute;
+    position: relative;
     inset: -100px 0 auto 0;
 }
 
 .section{
     width: 100%;
     padding: 100px 0;
+    position: relative;
 }
 
 .container{
@@ -56,7 +57,9 @@ h1{
     font-size: 220px;
     line-height: 200px;
     letter-spacing: 4px;
-    text-shadow: 60px 60px 3px var(--colorBlue);
+    text-shadow: 10px 10px 1px var(--colorBlue),
+    15px 15px 1px #207dff,
+    20px 20px 1px #4c96ff;
 }
 
 h2{
@@ -95,7 +98,8 @@ p{
     border-radius: 50px;
     font-size: 20px;
     cursor: pointer;
-    transition: background-color .3s ease-out;
+    transition: all .3s ease-out !important;
+    text-decoration: none;
 }
 
 .btn:hover{
@@ -126,17 +130,17 @@ p{
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    align-items: center;
     z-index: 10;
 }
 
 .header_nav div{
     display: flex;
     gap: 20px;
-    align-items: center;
 }
 
 .header_link{
+    display: flex;
+    align-items: center;
     padding: 10px 24px;
     border-radius: 50px;
     z-index: 2;
@@ -147,6 +151,8 @@ p{
 }
 
 .header_link--logo{
+    display: flex;
+    align-items: center;
     font-size: 26px;
 }
 
@@ -277,14 +283,12 @@ p{
   }
   
   .skills_block-skils:hover::before, .skills_block-skils_active::before {
-    transform: scale(100);
+    transform: scale(50);
     transition: .5s;
   }
 
 .skills_block-skils > img{
     width: 50%;
-    /* margin-top: 3px;
-    margin-right: 6px; */
     z-index: 3;
 }
 
@@ -451,12 +455,12 @@ p{
     border-radius: 50px;
     background-color: #0069ff;
     z-index: 1;
-    transition: opacity .3s cubic-bezier(.5, 0, .5, 0), left .3s ease-in-out, width .3s ease-in-out;
+    transition: opacity .3s cubic-bezier(.5, 0, .5, 0), left .3s ease-in-out, width .3s ease-in-out, height .3s ease-in-out;
 }
 
 .hideHeaderCursor {
     opacity: 0;
-    transition: opacity .3s cubic-bezier(0, .5, 0, .5), left .3s ease-in-out, width .3s ease-in-out;
+    transition: opacity .3s cubic-bezier(0, .5, 0, .5), left .3s ease-in-out, width .3s ease-in-out, height .3s ease-in-out;
 }
 
 .person-btn{
@@ -486,6 +490,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 12px;
+    text-decoration: none;
 }
 
 .project__main_block > img{
@@ -602,4 +607,9 @@ p{
     margin-top: 60px;
     grid-area: 2 / 2;
     font-size: 24px;
+}
+
+/* Typed */
+#typed_1 + span{
+    font-size: 30px;
 }

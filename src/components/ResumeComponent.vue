@@ -4,7 +4,7 @@
         <div class="container skills__container">
             <div class="skills_block--sticky_parent">
                 <div class="skills_block skills_block--sticky">
-                    <h2><span class="blue">_</span>Наши Скилы <span class="and blue">&</span> <br> Опыт</h2>
+                    <h2><span class="blue">_</span>Наши Скилы&nbsp;<span class="and blue">&</span>&nbsp;Опыт</h2>
                     <div class="skills__inner">
                         <div class="skills-inner__img_wrap">
                             <img class="skills-inner__img" :src="`/img/skills/${skill_active.icon}`" :alt="skill_active.title">
@@ -87,24 +87,23 @@
     // Function For Future Backend
     const getSkillsData = (): void => {
         skills_data.value = [
-            { id: 1, title: 'Git', icon: 'skills_logo_5.png', description: '1' },
-            { id: 2, title: 'NodeJS', icon: 'skills_logo_3.png', description: '2' },
-            { id: 3, title: 'Python', icon: 'skills_logo_4.png', description: '3' },
-            { id: 4, title: 'Django', icon: 'skills_logo_1.png', description: '4' },
-            { id: 5, title: 'JavaScript', icon: 'skills_logo_16.png', description: '5' },
-            { id: 6, title: 'JQuery', icon: 'skills_logo_2.png', description: '6' },
-            { id: 7, title: 'TypeScript', icon: 'skills_logo_17.png', description: '7' },
-            { id: 8, title: 'Vue.js', icon: 'skills_logo_14.png', description: '8' },
-            { id: 9, title: 'Laravel', icon: 'skills_logo_12.png', description: '9' },
-            { id: 10, title: 'HTML', icon: 'skills_logo_10.png', description: '10' },
-            { id: 11, title: 'CSS', icon: 'skills_logo_11.png', description: '11' },
-            { id: 12, title: 'REST API', icon: 'skills_logo_18.png', description: '12' },
-            { id: 13, title: 'PHP', icon: 'skills_logo_15.png', description: '13' },
-            { id: 14, title: 'MySQL', icon: 'skills_logo_9.png', description: '14' },
-            { id: 15, title: 'SQLite', icon: 'skills_logo_9.png', description: '15' },
-            { id: 16, title: 'Docker', icon: 'skills_logo_8.png', description: '16' },
-            { id: 17, title: 'Figma', icon: 'skills_logo_7.png', description: '17' },
-            { id: 18, title: 'Photoshop', icon: 'skills_logo_6.png', description: '18' }
+            { id: 1, title: 'Git', icon: 'skills_logo_5.png', description: 'Git — это система управления версиями с распределённой архитектурой' },
+            { id: 2, title: 'NodeJS', icon: 'skills_logo_3.png', description: 'Node.js — это платформа с открытым исходным кодом для работы с языком JavaScript.' },
+            { id: 3, title: 'Python', icon: 'skills_logo_4.png', description: 'Python — это высокоуровневый язык программирования общего назначения с динамической строгой типизацией и автоматическим управлением памятью.' },
+            { id: 4, title: 'Django', icon: 'skills_logo_1.png', description: 'Django — это бесплатный высокоуровневый фреймворк с открытым исходным кодом, предназначенный для создания приложений на языке Python. Его основная цель — помочь разработчикам быстро и безопасно создавать серверную часть сайтов.' },
+            { id: 5, title: 'JavaScript', icon: 'skills_logo_16.png', description: 'JavaScript — это язык программирования, который используется для создания интерактивных и динамических веб-сайтов' },
+            { id: 6, title: 'JQuery', icon: 'skills_logo_2.png', description: 'jQuery — это быстрая, небольшая и богатая функциями JavaScript-библиотека, предназначенная для упрощения написания скриптов на языке JavaScript.' },
+            { id: 7, title: 'TypeScript', icon: 'skills_logo_17.png', description: 'TypeScript — это язык программирования для веб-разработки, основанный на JavaScript. Он делает код понятнее и надёжнее, добавляет статическую типизацию (переменные привязаны к конкретным типам данных).' },
+            { id: 8, title: 'Vue.js', icon: 'skills_logo_14.png', description: 'Vue.js — это прогрессивный JavaScript-фреймворк для разработки сайтов и веб-приложений, написанный на JavaScript' },
+            { id: 9, title: 'Laravel', icon: 'skills_logo_12.png', description: 'Laravel — бесплатный PHP-фреймворк с открытым исходным кодом, специально разработанный для создания сложных сайтов и веб-приложений.' },
+            { id: 10, title: 'HTML', icon: 'skills_logo_10.png', description: 'HTML — это язык гипертекстовой разметки, который лежит в основе веб-разработки и помогает упорядочивать содержимое веб-страниц.' },
+            { id: 11, title: 'CSS', icon: 'skills_logo_11.png', description: 'CSS — это каскадные таблицы стилей, язык описания внешнего вида HTML-документа.' },
+            { id: 12, title: 'REST API', icon: 'skills_logo_18.png', description: 'REST API — это архитектурный стиль взаимодействия компонентов распределённой системы, который используют для передачи данных между сервером и клиентом.' },
+            { id: 13, title: 'PHP', icon: 'skills_logo_15.png', description: 'PHP — это скриптовый язык программирования. Имеет открытый исходный код. Изначально создавался для разработки веб-приложений, но в процессе обновлений стал языком общего назначения.' },
+            { id: 14, title: 'MySQL', icon: 'skills_logo_9.png', description: 'MySQL — это система управления реляционными базами данных (СУРБД).' },
+            { id: 15, title: 'Docker', icon: 'skills_logo_8.png', description: 'Docker — это платформа контейнеризации с открытым исходным кодом, с помощью которой можно автоматизировать создание приложений, их доставку и управление.' },
+            { id: 16, title: 'Figma', icon: 'skills_logo_7.png', description: 'Figma — онлайн-сервис для веб-дизайна. В нём можно отрисовать иллюстрации и элементы интерфейса, создать интерактивный макет сайта, прототип приложения или векторную графику.' },
+            { id: 17, title: 'Photoshop', icon: 'skills_logo_6.png', description: 'Photoshop — многофункциональный графический редактор. Позволяет обрабатывать фото, создавать иллюстрации, прототипы и макеты для веб-дизайна, несложные анимации и многое другое.' }
         ];
 
         // Set Active Skill
