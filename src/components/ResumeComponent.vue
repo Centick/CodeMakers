@@ -26,46 +26,46 @@
                 </div>
                 <div class="skills_block-experience">
                     <div class="experience">
-                        <p>12.11.2023</p>
+                        <p>25.11.2023</p>
                         <div class="experience_description">
                             <h4><span class="blue">«</span> Minin Code <span class="blue">»</span> - 1 место</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consectetur nesciunt magni similique maxime cum neque ex sint voluptatem nulla! Hic sequi, expedita quam repudiandae nihil rem mollitia at maiores?</p>
+                            <p>Участники хакатона "Минин Code" представляют собой молодых программистов в возрасте от 12 до 18 лет. Участие в мероприятии позволяет им демонстрировать профессиональные навыки, расширять сеть контактов и набираться опыта в командной работе.</p>
                         </div>
                     </div>
                 </div>
                 <div class="skills_block-experience">
                     <div class="experience">
-                        <p>12.01.2024</p>
+                        <p>17.12.2023</p>
                         <div class="experience_description">
                             <h4><span class="blue">«</span> Taskills <span class="blue">»</span> - 1 место</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consectetur nesciunt magni similique maxime cum neque ex sint voluptatem nulla! Hic sequi, expedita quam repudiandae nihil rem mollitia at maiores?</p>
+                            <p>Всероссийский хакатон по информационным технологиям «TASKILLS» для учащихся образовательных учреждений (от 12 до 18 лет) в дистанционном формате и в два этапа: отборочный и финальный!</p>
                         </div>
                     </div>
                 </div>
                 <div class="skills_block-experience">
                     <div class="experience">
-                        <p>12.01.2024</p>
+                        <p>24.08.2024</p>
                         <div class="experience_description">
                             <h4><span class="blue">«</span> ИТ вызов <span class="blue">»</span> - 1 место</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consectetur nesciunt magni similique maxime cum neque ex sint voluptatem nulla! Hic sequi, expedita quam repudiandae nihil rem mollitia at maiores?</p>
+                            <p>Оффлайн хакатон для школьников и студентов в городе Ижевск. Возраст участников Хакатона: 15-20 лет включительно (на момент времени проведения мероприятия), которые интересуются сферой информационных технологий, имеют опыт в разработке сайтов и мобильных приложений.</p>
                         </div>
                     </div>
                 </div>
                 <div class="skills_block-experience">
                     <div class="experience">
-                        <p>12.01.2024</p>
+                        <p>31.08.2024</p>
                         <div class="experience_description">
                             <h4><span class="blue">«</span> Про IT <span class="blue">»</span> - 1 место</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consectetur nesciunt magni similique maxime cum neque ex sint voluptatem nulla! Hic sequi, expedita quam repudiandae nihil rem mollitia at maiores?</p>
+                            <p>Цель Хакатона – погружение школьников в процесс профессионального самоопределения с учетом стратегии социальноэкономического развития Липецкой области. </p>
                         </div>
                     </div>
                 </div>
                 <div class="skills_block-experience">
                     <div class="experience">
-                        <p>12.01.2024</p>
+                        <p>02.11.2024</p>
                         <div class="experience_description">
                             <h4><span class="blue">«</span> Digital Code <span class="blue">»</span> - 1 место</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consectetur nesciunt magni similique maxime cum neque ex sint voluptatem nulla! Hic sequi, expedita quam repudiandae nihil rem mollitia at maiores?</p>
+                            <p>Целью проведения Хакатона является популяризация технической направленности основного и дополнительного образования для школьников, науки и знаний в области современных технологий в Липецкой области.</p>
                         </div>
                     </div>
                 </div>

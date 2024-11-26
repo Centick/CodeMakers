@@ -4,7 +4,7 @@
             <nav class="header_nav" :class="{'header_nav--open': isBurgerOpen}">
                 <div>
                     <span class="header-cursor" :class="{hideHeaderCursor: !headerCursor1.active}" :style="{ width: `${headerCursor1.width}px`, height: `${headerCursor1.height}px`, left: `${headerCursor1.left}px` }"></span>
-                    <a class="link header_link header-section-1" @click="getClickFromHeader($event, props.anchors.homeAnch)" ref="homeHeaderBtn" href="#home">Home</a>
+                    <a class="link header_link header-section-1" @click="getClickFromHeader($event, props.anchors.homeAnch)" ref="homeHeaderBtn" href="#home">Главная</a>
                     <a class="link header_link header-section-1" @click="getClickFromHeader($event, props.anchors.aboutAnch)" ref="aboutHeaderBtn" href="#about">О нас</a>
                     <a class="link header_link header-section-1" @click="getClickFromHeader($event, props.anchors.resumeAnch)" ref="resumeHeaderBtn" href="#resume">Резюме</a>
                 </div>

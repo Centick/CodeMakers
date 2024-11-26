@@ -199,11 +199,16 @@ p{
 
 .banner__container{
     display: flex;
-    align-items: flex;
-    
     justify-content: center;
 }
-
+@keyframes banner_img {
+    0%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(4px);
+    }
+}
 .banner_img{
     position: absolute;
     top: 5vh;
@@ -213,8 +218,8 @@ p{
     z-index: -1;
     opacity: .5;
     filter: blur(4px);
+    animation: banner_img 1.5s ease;
 }
-
 /* about us */
 .about-us__container{
     display: grid;
