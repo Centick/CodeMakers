@@ -189,10 +189,11 @@
             <div class="connection__main-wrap">
                 <div>
                     <div class="icons_mail"></div>
-                    <input class="connection__input" placeholder="Укажите свою почту">
+                    <input v-model="email" class="connection__input" placeholder="Укажите свою почту">
                 </div>
-                <a href="#" class="link">Отправить</a>
+                <a @click.prevent="sendEmail()" href="#" class="link">Отправить</a>
             </div>
+            <span v-show="error" :style="`text-align: center; font-size: 20px; color: ${message_color}`">{{ error }}</span>
             <div class="connection_pluses">
                 <div class="connection_pluses_block">
                     <img src="@/assets/img/icons/mail.png" alt="img">
@@ -230,6 +231,7 @@
     import {reactive, ref, defineProps, onMounted, type Ref} from 'vue';
     import type {Project} from "@/types";
     import AOS from 'aos';
+    import axios from 'axios';
     import 'aos/dist/aos.css';
 
     const props = defineProps({
@@ -335,6 +337,24 @@
 
     // Get All Projects
     getProjects();
+
+    // Email Sending
+    const email: Ref<string> = ref('');
+    const error: Ref<string> = ref('');
+    const message_color: Ref<'red' | 'green'> = ref('red');
+    const sendEmail = (): void => {
+        axios.post(window.origin + '/api/email', {
+            email: email.value
+        }).then(res => {
+            if(res.data.success){
+                message_color.value = 'green';
+            }
+            else{
+                message_color.value = 'red';
+            }
+            error.value = res.data.message;
+        });
+    };
 
     // On Mounted Clicks Default Cursor Object
     onMounted(() => {

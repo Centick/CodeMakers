@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  server:
+    build: ./
+    command: npx nodemon server/index.cjs
+    ports:
+      - '80:80'
+    depends_on:
+      - db
+    volumes:
+      - .:/usr/src/taskills
+  db:
+    image: mysql:5
+    restart: always
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: 'taskills_codemakers'
+      MYSQL_USER: 'codemakers_user'
+      MYSQL_PASSWORD: 'Ujkjdjkjvrf'
+      MYSQL_ROOT_PASSWORD: 'Ujkjdjkjvrf'
+    ports:
+      - '3306:3306'
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      - PMA_ARBITRARY=1
