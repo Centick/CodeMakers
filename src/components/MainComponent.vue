@@ -648,13 +648,10 @@
         .person-cursor{
             height: 30px;
         }
-
         .person-btn {
-            font-size: 17px;
-            padding: 5px 10px;
+            font-size: 15px;
+            padding: 4px 10px;
         }
-
-
         .video__main_wrap{
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         }
