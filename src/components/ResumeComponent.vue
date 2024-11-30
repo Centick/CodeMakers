@@ -204,4 +204,12 @@
     .video__main_block > h5{
         padding: 0 5px;
     }
+
+    @media (max-width: 1024px) {
+        .experience{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
 </style>

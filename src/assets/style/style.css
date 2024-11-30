@@ -616,7 +616,8 @@ p{
     background-color: var(--colorBlue);
     border-radius: 50%;
     display: flex;
-    padding: 12px;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -708,8 +709,25 @@ p{
         grid-template-columns: 1fr;
     }    
 
+    h2 {
+        font-size: 50px;
+    }
+
+    h3{
+        font-size: 45px;
+    }
+
+    h4{
+        font-size: 40px;
+    }
+
     .about-us__container{
         grid-template-columns: 1fr;
         justify-items: center;
+    }
+
+    .icons_mail{
+        width: 45px;
+        height: 35px;
     }
 }

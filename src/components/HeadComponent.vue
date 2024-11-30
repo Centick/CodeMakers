@@ -15,7 +15,15 @@
                     <a class="link header_link header-section-2" @click="getClickFromHeader($event, anchors.projectsAnch)" ref="projectsHeaderBtn" href="#projects">Проекты</a>
                     <a class="link header_link header-section-2" @click="getClickFromHeader($event, anchors.contactsAnch)" ref="contactsHeaderBtn" href="#contacts">Контакты</a>
                 </div>
-                <span class="burger_menu" @click="isBurgerOpen = !isBurgerOpen"></span>
+                <span class="burger_btn" :class="{'burger_btn--open': isBurgerOpen}" @click="isBurgerOpen = !isBurgerOpen"></span>
+                <div class="burger_menu">
+                    <a class="link header_link header-section-1" @click="getClickFromHeader($event, anchors.homeAnch)" ref="homeHeaderBtn" href="#home">Главная</a>
+                    <a class="link header_link header-section-1" @click="getClickFromHeader($event, anchors.aboutAnch)" ref="aboutHeaderBtn" href="#about">Команда</a>
+                    <a class="link header_link header-section-1" @click="getClickFromHeader($event, anchors.resumeAnch)" ref="resumeHeaderBtn" href="#resume">Скилы</a>
+                    <a class="link header_link header-section-2" @click="getClickFromHeader($event, anchors.historyAnch)" ref="historyHeaderBtn" href="#history">История</a>
+                    <a class="link header_link header-section-2" @click="getClickFromHeader($event, anchors.projectsAnch)" ref="projectsHeaderBtn" href="#projects">Проекты</a>
+                    <a class="link header_link header-section-2" @click="getClickFromHeader($event, anchors.contactsAnch)" ref="contactsHeaderBtn" href="#contacts">Контакты</a>
+                </div>
             </nav>
         </div>
     </div>
@@ -135,14 +143,23 @@
 </script>
 
 <style scoped>
-    .burger_menu{
+    .burger_btn{
         display: none;
         background: url('../assets/img/icons/burger.svg');
         background-position: center;
         background-size: cover;
-        width: 18px;
-        height: 18px;
+        width: 30px;
+        height: 30px;
         cursor: pointer;
+    }
+
+    .burger_menu{
+        display: none;
+        user-select: none;
+    }
+
+    .burger_menu > .link{
+        padding: 8px 12px;
     }
 
     @media (max-width: 1024px) {
@@ -151,35 +168,57 @@
         }
 
         .header_nav{
-            padding: 5px;
+            padding: 8px 20px;
         }
 
-        .burger_menu{
+        .burger_btn{
             display: block;
         }
 
+        .burger_btn--open{
+            background-image: url('../assets/img/icons/cross.svg');
+        }
+
         .header_nav{
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
             gap: 1px;
         }
 
         .header_nav--open{
-            height: fit-content;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            border-radius: 35px;
-            justify-items: center;
-            transition: all .4s linear;
+            /* display: flex;
+            flex-direction: row;
+            justify-content: space-between; */
+            position: relative;
+        }
+
+        .burger_menu{
+            position: absolute;
+            padding: 10px;
+            background-color: #313131;
+            border-radius: 25px;
+            top: 60px;
+            right: 0;
         }
 
         .header_nav--open > div{
-            display: block;
+            display: none;
+        }
+
+        .header_nav--open > .burger_menu{
+            display: grid;
+            grid-auto-columns: 1fr;
         }
 
         .header_nav--open > div > .header_link {
             border: none;
+        }
+
+        .burger_menu{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
     }
 </style>

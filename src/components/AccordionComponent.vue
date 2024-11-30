@@ -98,4 +98,14 @@
     .p-accordionpanel-active .accordion__arrow{
         transform: rotate(0deg);
     }
+
+    @media (max-width: 1024px) {
+        .accordion-item__text {
+            font-size: 18px;
+        }
+
+        .accordion-item-title__text{
+            font-size: 30px;
+        }
+    }
 </style>

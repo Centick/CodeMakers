@@ -75,13 +75,14 @@
     }
     .wrap{
         transform: rotate(-4deg);
+        gap: 0px;
     }
     h1 {
         font-size: 2em;
         font-weight: bold;
     }
     h1, p {
-        margin-bottom: 20px;    
+        margin-bottom: 10px;    
     }
     .items-wrap {
         position: relative;
@@ -141,6 +142,20 @@
         }
         to {
             transform: translateX(calc(-100% - 20px));
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .item{
+            font-size: 18px;
+            margin: 4px 0;
+        }
+
+        .items-wrap {
+            gap: 10px;
+        }
+        .items {
+            gap: 10px;
         }
     }
 

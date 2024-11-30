@@ -10,7 +10,7 @@
     </div>
 
     <!-- бегущая строка -->
-    <div class="section">
+    <div class="section marquee__section">
         <MarqueeComponent/> 
     </div>
     
@@ -61,7 +61,7 @@
             <div class="history_main-wrap">
 
                 <div class="history_text-wrap">
-                    <div class="history_block" data-aos="fade-up">
+                    <div class="history_block history_block--h4" data-aos="fade-up">
                         <h4>Начало</h4>
                         <!-- <p>Все мы примерно в одно время стали осваивать эту компетенцию.</p> -->
                     </div>
@@ -69,14 +69,14 @@
                         1
                         <div class="points"></div>
                     </div>
-                    <div class="history_block" data-aos="fade-up">
+                    <div class="history_block history_block--p" data-aos="fade-up">
                         <!-- <h4>Знакомство друг с другом</h4> -->
                         <p>В сентябре 2022 года мы впервые пришли в веб-разработку, записавшись на направление "Веб-технологии" в Центр цифрового образования детей "IT-Куб" города Липецка. Каждый из нас уже имел опыт в программировании, но по другим компетенциям: Python, C++б С#, Java. Но нас заинтересовал веб и мы захотели начать в нём развиваться.</p>
                     </div>
                 </div>
 
                 <div class="history_text-wrap">
-                    <div class="history_block" data-aos="fade-up">
+                    <div class="history_block history_block--h4" data-aos="fade-up">
                         <h4>Изучение базовых основ</h4>
                         <!-- <p>Нами постигаются наши первые html теги</p> -->
                     </div>
@@ -84,14 +84,14 @@
                         2
                         <div class="points"></div>
                     </div>
-                    <div class="history_block" data-aos="fade-up">
+                    <div class="history_block history_block--p" data-aos="fade-up">
                         <!-- <h4>Первые соревнования</h4> -->
                         <p>Первый год мы изучали HTML, CSS, JavaScript, MySQL и PHP, параллельно закрепляя полученные знания итоговыми проектами по каждому блоку.</p>
                     </div>
                 </div>
 
                 <div class="history_text-wrap">
-                    <div class="history_block" data-aos="fade-up">
+                    <div class="history_block history_block--h4" data-aos="fade-up">
                         <h4>Закрепление знаний</h4>
                         <!-- <p>По началу далеко не всегда мы брали верх</p> -->
                     </div>
@@ -99,14 +99,14 @@
                         3
                         <div class="points"></div>
                     </div>
-                    <div class="history_block" data-aos="fade-up">
+                    <div class="history_block history_block--p" data-aos="fade-up">
                         <!-- <h4>Большая мотивация</h4> -->
                         <p>Изучив основы веб-разработки мы приступили к закреплению знаний на практике. Весь второй год обучения мы старались принмиать максимальное участие в региональный и всероссийских конкурсах, таких как: Нам с IT по пути, Первому разработчику приготовиться, олимпиада Созвезжие, Большой фестиваль, чемпионат Профессионалы. Становилось очевидно, что следует выходить на новый уровень...</p>
                     </div>
                 </div>
 
                 <div class="history_text-wrap">
-                    <div class="history_block" data-aos="fade-up">
+                    <div class="history_block  history_block--h4" data-aos="fade-up">
                         <h4>Хакатоны</h4>
                         <!-- <p>И вот мы готовы к серьёзным и большим проектам</p> -->
                     </div>
@@ -114,14 +114,14 @@
                         4
                         <div class="points"></div>
                     </div>
-                    <div class="history_block" data-aos="fade-up">
+                    <div class="history_block history_block--p" data-aos="fade-up">
                         <!-- <h4>Поездка на 1-ый хакатон</h4> -->
                         <p>Данный вид мероприятий как ни какой другой позволяет своим участникам повышать уровень знаний и навыков в короткие сроки. Благодаря возможностям, которые нам предоставил Центр цифрового образования детей "IT-Куб" мы стали ездить по стране принимая участия в хакатонах Всероссийского уровня. Томск, Калуга, Ижевск, Нижний Новогород, Владивосток, мы старались участвовать и побеждать.</p>
                     </div>
                 </div>
 
-                <div class="history_text-wrap">
-                    <div class="history_block" data-aos="fade-up">
+                <div class="history_text-wrap ">
+                    <div class="history_block history_block--h4" data-aos="fade-up">
                         <h4>Коммерческие проекты</h4>
                         <!-- <p>Наше первое первое место!</p> -->
                     </div>
@@ -129,13 +129,13 @@
                         5
                         <div class="points"></div>
                     </div>
-                    <div class="history_block" data-aos="fade-up">
+                    <div class="history_block history_block--p" data-aos="fade-up">
                         <!-- <h4>Изучение фреймворков</h4> -->
                         <p>Как подготовиться к профориентации? Конечно же принимать участие в разработке настоящих проектов, работая с государственными и частными компаниями. Многие из нас стараются находить сторонние проекты и реализовывать частичный и полный функционал для заказчиков. Некоторые из наших работ, созданных в ходе участия в хакатонах имеют историю продолжения. Мы дорабатывали их и отдавали заказчикам кейса.</p>
                     </div>
                 </div>
                 
-                <div class="history_text-wrap">
+                <div class="history_text-wrap history_text-wrap--typed">
                     <div class="history_block">
                         <span></span>
                     </div>
@@ -155,9 +155,9 @@
             <h2><span class="blue">_</span>Наши проекты</h2>
             <div class="choosing-person_wrap">
                 <span class="person-cursor" :style="{ width: `${personCursor.width}px`, left: `${personCursor.left}px` }"></span>
-                <span data-author="utyatskiy" @click="setPersonCursor" :ref="setAutoClickPerson" class="person-btn">Утяцкий В</span>
-                <span data-author="fedosenko" @click="setPersonCursor" class="person-btn">Федосенко И</span>
-                <span data-author="chernykh" @click="setPersonCursor" class="person-btn">Черных В</span>
+                <span data-author="utyatskiy" @click="setPersonCursor" :ref="setAutoClickPerson" class="person-btn">Утяцкий&nbsp;В</span>
+                <span data-author="fedosenko" @click="setPersonCursor" class="person-btn">Федосенко&nbsp;И</span>
+                <span data-author="chernykh" @click="setPersonCursor" class="person-btn">Черных&nbsp;В</span>
                 <span data-author="all" @click="setPersonCursor" class="person-btn">Все</span>
             </div>
             <div class="project__main_wrap">
@@ -494,6 +494,8 @@
         gap: 10px;
         align-items: center;
     }
+
+
     @keyframes connection__main-wrap {
         0%{
             box-shadow: var(--colorBlue) 0 0 50px -25px;
@@ -528,4 +530,130 @@
     .video__main_block{
         cursor: pointer;
     }
+
+    .about-us__section{
+        overflow: hidden;
+    }
+
+    .banner__section{
+        overflow: hidden;
+    }
+
+    @media (max-width: 1024px) {
+        .about-us__main-wrap__gear{
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            z-index: -1;
+        }
+
+        .about-us__main-wrap__gear-1{
+            top: -20px;
+            right: -50px;
+        }
+        .about-us__main-wrap__gear-2{
+            bottom: -20px;
+            left: -50px;
+        }
+
+        .about-us_img-wrap{
+            width: 100%
+        }
+
+        .footer__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+        }
+        .footer_text {
+            margin-top: 20px;
+            grid-area: 2 / 1;
+        }
+
+        .connection__main-wrap {
+            width: 100%;
+        }
+
+        .connection_pluses {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+        }
+
+        .history_text-wrap {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-columns: auto auto;
+            gap: 50px;
+        }
+
+        .history_chronology_block{
+            grid-area: 1 / 1;
+        }
+
+        .history_block--p{
+            grid-area: 2 / 2;
+        }
+
+        .history_block--h4{
+            grid-area: 1 / 2;
+        }
+
+        .choosing-person_wrap {
+            gap: 8px;
+            }
+
+        .connection_pluses_block > img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .history_text-wrap--typed{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .typed_parent > h4{
+            font-size: 30px;
+        }
+
+        .history_main-wrap{
+            gap: 120px;
+        }
+
+        .connection__input {
+            font-size: 20px;
+        }
+        .connection__main-wrap > div {
+            display: flex;
+            gap: 10px;
+        }
+
+        .connection__main-wrap {
+            gap: 10px;
+        }
+
+        .connection__main-wrap > a{
+            padding: 8px 12px;
+        }
+
+        .marquee__section{
+            padding: 50px 0;
+        }
+
+    }
+
+    @media (max-width: 576px) {
+        .person-cursor{
+            height: 30px;
+        }
+
+        .person-btn {
+            font-size: 17px;
+            padding: 5px 10px;
+        }
+    }
+
+        
 </style>
