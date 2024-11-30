@@ -4,14 +4,14 @@
         <div class="container skills__container">
             <div class="skills_block--sticky_parent">
                 <div class="skills_block skills_block--sticky">
-                    <h2><span class="blue">_</span>Наши Скилы&nbsp;<span class="and blue">&</span>&nbsp;Опыт</h2>
+                    <h2><span class="blue">_</span>Стек технологий&nbsp;<span class="and blue">&</span>&nbsp;Опыт</h2>
                     <div class="skills__inner">
                         <div class="skills-inner__img_wrap">
                             <img class="skills-inner__img" :src="`/img/skills/${skill_active.icon}`" :alt="skill_active.title">
                         </div>
                         <p class="skills-inner__text">{{ skill_active.description }}</p>
                     </div>
-                    <h3>Скилы</h3>
+                    <h3>Технологии</h3>
                     <div class="skills_wrap-skils">
                         <div @click="setActiveSkill(skills_datum.id)" class="skills_block-skils" :class="{'skills_block-skils_active': skill_active.id === skills_datum.id}" :key="skills_datum.id" v-for="skills_datum in skills_data">
                             <img :src="`/img/skills/${skills_datum.icon}`" :alt="skills_datum.title">
@@ -22,32 +22,23 @@
 
             <div class="skills_block">
                 <div class="skills_block-experience">
-                    <h3>Опыт</h3>
+                    <h3>Победы</h3>
                 </div>
                 <div class="skills_block-experience">
                     <div class="experience">
-                        <p>25.11.2023</p>
+                        <p>30.11.2024</p>
                         <div class="experience_description">
-                            <h4><span class="blue">«</span> Minin Code <span class="blue">»</span> - 1 место</h4>
+                            <h4><span class="blue">«</span> MininCode <span class="blue">»</span> - 3 место</h4>
                             <p>Участники хакатона "Минин Code" представляют собой молодых программистов в возрасте от 12 до 18 лет. Участие в мероприятии позволяет им демонстрировать профессиональные навыки, расширять сеть контактов и набираться опыта в командной работе.</p>
                         </div>
                     </div>
                 </div>
                 <div class="skills_block-experience">
                     <div class="experience">
-                        <p>17.12.2023</p>
+                        <p>02.11.2024</p>
                         <div class="experience_description">
-                            <h4><span class="blue">«</span> Taskills <span class="blue">»</span> - 1 место</h4>
-                            <p>Всероссийский хакатон по информационным технологиям «TASKILLS» для учащихся образовательных учреждений (от 12 до 18 лет) в дистанционном формате и в два этапа: отборочный и финальный!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills_block-experience">
-                    <div class="experience">
-                        <p>24.08.2024</p>
-                        <div class="experience_description">
-                            <h4><span class="blue">«</span> ИТ вызов <span class="blue">»</span> - 1 место</h4>
-                            <p>Оффлайн хакатон для школьников и студентов в городе Ижевск. Возраст участников Хакатона: 15-20 лет включительно (на момент времени проведения мероприятия), которые интересуются сферой информационных технологий, имеют опыт в разработке сайтов и мобильных приложений.</p>
+                            <h4><span class="blue">«</span> Digital Code <span class="blue">»</span> - 1 место</h4>
+                            <p>Целью проведения Хакатона является популяризация технической направленности основного и дополнительного образования для школьников, науки и знаний в области современных технологий в Липецкой области.</p>
                         </div>
                     </div>
                 </div>
@@ -62,10 +53,37 @@
                 </div>
                 <div class="skills_block-experience">
                     <div class="experience">
-                        <p>02.11.2024</p>
+                        <p>24.08.2024</p>
                         <div class="experience_description">
-                            <h4><span class="blue">«</span> Digital Code <span class="blue">»</span> - 1 место</h4>
-                            <p>Целью проведения Хакатона является популяризация технической направленности основного и дополнительного образования для школьников, науки и знаний в области современных технологий в Липецкой области.</p>
+                            <h4><span class="blue">«</span> ИТ вызов <span class="blue">»</span> - 1 место</h4>
+                            <p>Оффлайн хакатон для школьников и студентов в городе Ижевск. Возраст участников Хакатона: 15-20 лет включительно (на момент времени проведения мероприятия), которые интересуются сферой информационных технологий, имеют опыт в разработке сайтов и мобильных приложений.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills_block-experience">
+                    <div class="experience">
+                        <p>02.05.2024</p>
+                        <div class="experience_description">
+                            <h4><span class="blue">«</span> Искусство кода <span class="blue">»</span> - 3 место</h4>
+                            <p>Участникам нужно подготовить проект в сфере информационных технологий и программирования на выбор: веб-разработка, разработка игр, мобильная разработка, искусственный интеллект, разработка VRAR-приложений</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills_block-experience">
+                    <div class="experience">
+                        <p>17.12.2023</p>
+                        <div class="experience_description">
+                            <h4><span class="blue">«</span> Taskills <span class="blue">»</span> - 1 место</h4>
+                            <p>Всероссийский хакатон по информационным технологиям «TASKILLS» для учащихся образовательных учреждений (от 12 до 18 лет) в дистанционном формате и в два этапа: отборочный и финальный!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills_block-experience">
+                    <div class="experience">
+                        <p>25.11.2023</p>
+                        <div class="experience_description">
+                            <h4><span class="blue">«</span> Minin Code <span class="blue">»</span> - 1 место</h4>
+                            <p>Участники хакатона "Минин Code" представляют собой молодых программистов в возрасте от 12 до 18 лет. Участие в мероприятии позволяет им демонстрировать профессиональные навыки, расширять сеть контактов и набираться опыта в командной работе.</p>
                         </div>
                     </div>
                 </div>
@@ -150,5 +168,23 @@
     }
     .skills-inner__text{
         font-size: 20px;
+    }
+    .video__main_block{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-decoration: none;
+    }
+
+    .video__main_block > img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+        pointer-events: none;
+    }
+
+    .video__main_block > h5{
+        padding: 0 5px;
     }
 </style>
