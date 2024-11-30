@@ -200,7 +200,7 @@
             <div class="connection_pluses">
                 <div class="connection_pluses_block">
                     <img src="@/assets/img/icons/mail.png" alt="img">
-                    <span>Быстро и <br> качественно</span>
+                    <span>Быстро <br> ответим</span>
                 </div>
                 <div class="connection_pluses_block">
                     <img src="@/assets/img/icons/tag.png" alt="img">
@@ -208,11 +208,11 @@
                 </div>
                 <div class="connection_pluses_block">
                     <img src="@/assets/img/icons/tech.png" alt="img">
-                    <span>По лучшим<br> технологиям</span>
+                    <span>Используем лучшие<br> технологии</span>
                 </div>
                 <div class="connection_pluses_block">
                     <img src="@/assets/img/icons/web.png" alt="img">
-                    <span>Отличный<br> web-сайты</span>
+                    <span>Качественные<br> продукты</span>
                 </div>
             </div>
         </div>
@@ -220,8 +220,8 @@
     <AccordionComponent />
     <div class="section">
         <div class="container footer__container">
-            <h2 class="footer_title">Спасибо за все!</h2>
-            <p class="footer_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quisquam veniam a consequuntur, possimus perferendis! Quidem voluptatum quos sapiente cumque explicabo ut molestias voluptates! Sunt possimus tempore quidem autem animi.</p>
+            <h2 class="footer_title">Рады знакомству!</h2>
+            <p class="footer_text">Мы ценим каждую возможность общения, ведь новые знакомства и совместные проекты вдохновляют нас двигаться вперёд! Если у вас есть интересный проект, предложение о сотрудничестве или просто желание пообщаться, пишите нам! Мы будем рады обменяться идеями и создать что-то по-настоящему классное вместе.</p>
         </div>
     </div>
 
