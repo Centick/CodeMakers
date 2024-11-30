@@ -186,4 +186,22 @@
     .skills-inner__text{
         font-size: 20px;
     }
+    .video__main_block{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-decoration: none;
+    }
+
+    .video__main_block > img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+        pointer-events: none;
+    }
+
+    .video__main_block > h5{
+        padding: 0 5px;
+    }
 </style>

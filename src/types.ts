@@ -13,3 +13,10 @@ export type Project = {
     author: string;
     link: string;
 };
+
+export type Video = {
+    id: number;
+    title: string;
+    src: string;
+    img: string;
+};

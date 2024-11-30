@@ -185,6 +185,18 @@
         </div>
     </div>
 
+    <div class="section">
+        <div class="container video__container">
+            <h2 class="video__title"><span class="blue">_</span>Наши видеоролики</h2>
+            <div class="video__main_wrap">
+                <div @click="openVideoModal(video)" class="video__main_block" v-for="video in videos">
+                    <img :src="`/img/videos/${video.img}`" :key="video.id" :alt="video.title">
+                    <h5>{{ video.title }}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- свяжитесь с нами -->
     <span ref="contactsAnch" class="anchor"></span>
     <div class="section">
@@ -225,15 +237,22 @@
             <p class="footer_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quisquam veniam a consequuntur, possimus perferendis! Quidem voluptatum quos sapiente cumque explicabo ut molestias voluptates! Sunt possimus tempore quidem autem animi.</p>
         </div>
     </div>
+
+    <VideoComponent
+        :current_video="current_video"
+        v-if="video_modal_opened"
+        @close="closeVideoModal"
+    />
 </template>
 
 <script setup lang="ts">
     import MarqueeComponent from '@/components/MarqueeComponent.vue';
     import AccordionComponent from '@/components/AccordionComponent.vue';
     import ResumeComponent from '@/components/ResumeComponent.vue';
+    import VideoComponent from '@/components/VideoComponent.vue';
     import Typed from 'typed.js';
     import {reactive, ref, defineProps, onMounted, type Ref} from 'vue';
-    import type {Project} from "@/types";
+    import type  {Project, Video } from "@/types";
     import AOS from 'aos';
     import axios from 'axios';
     import 'aos/dist/aos.css';
@@ -299,7 +318,10 @@
     // Array of Shuffled Projects
     const shuffled_projects: Ref<Project[]> = ref([{id: 0, title: '', img: '', skills: [], author: '', link: ''}]);
 
-    // Function For future Backend
+    // Array of All Videos
+    const videos: Ref<Video[]> = ref([{id: 0, title: '', src: '', img: ''}]);
+
+    // Function For Future Backend
     function getProjects(): void {
         projects.value = [
             { id: 1, title: "Бизнес", img: '1.png', skills: ["AOS", 'JavaScript', 'HTML', 'CSS'], author: 'utyatskiy', link: "https://skills.junior-it.ru/work/anxwamvsbyvrgyaaepgdumvvvv1j9bpp/" },
@@ -339,7 +361,16 @@
         }
     }
 
-    // Get All Projects
+
+    // Function For Future Backend
+    function getVideos(): void {
+        videos.value = [
+            { id: 1, title: "Видео", src: '1.mp4', img: '1.png' },
+        ];
+    }
+
+    // Get All Videos And Projects
+    getVideos();
     getProjects();
 
     // Email Sending
@@ -359,6 +390,28 @@
             error.value = res.data.message;
         });
     };
+
+
+    // Current Video For Modal
+    const current_video: Ref<Video> = ref({id: 0, title: '', src: '', img: ''});
+
+    // Is Video Modal Opened
+    const video_modal_opened: Ref<boolean> = ref(false);
+
+    // Open Video Modal
+    const openVideoModal = (video: Video): void => {
+        video_modal_opened.value = true;
+        current_video.value = video;
+        document.body.style.overflowY = 'hidden';
+    };
+
+    // Close Video Modal
+    const closeVideoModal = (): void => {
+        video_modal_opened.value = false;
+        document.body.style.overflowY = '';
+    };
+
+
 
     // On Mounted Clicks Default Cursor Object
     onMounted(() => {
@@ -432,6 +485,7 @@
         AOS.init();
     });
 </script>
+
 <style scoped>
     .about-us__main-wrap__gear{
         position: absolute;
@@ -468,5 +522,23 @@
         position: relative;
         background-color: var(--colorBlack);
         animation: connection__main-wrap 3s ease infinite;
+    }
+    .video__title{
+        text-align: center;
+    }
+    .video__container{
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-content: start;
+        gap: 50px;
+    }
+    .video__main_wrap{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        width: 100%;
+    }
+    .video__main_block{
+        cursor: pointer;
     }
 </style>
