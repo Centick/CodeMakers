@@ -3,7 +3,8 @@
     <span ref="homeAnch" class="anchor"></span>
     <div class="section banner__section">
         <div class="container banner__container">
-            <h1 data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">CODEMAKERS </h1>
+            <h1 class="banner__title" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">CODEMAKERS</h1>
+            <span class="banner__subtitle" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur dolor harum magni nemo provident quibusdam repudiandae suscipit unde voluptatem. Aliquam asperiores dolore dolorem possimus quia soluta temporibus voluptas voluptatem?</span>
             <img class="banner_img" src="../assets/img/2.png" alt="img">
         </div>
     </div>
@@ -451,13 +452,13 @@
     }
     @keyframes connection__main-wrap {
         0%{
-            box-shadow: var(--colorBlue) 0 0 50px -20px;
-        }
-        50%{
             box-shadow: var(--colorBlue) 0 0 50px -25px;
         }
+        50%{
+            box-shadow: var(--colorBlue) 0 0 50px -30px;
+        }
         100%{
-            box-shadow: var(--colorBlue) 0 0 50px -20px;
+            box-shadow: var(--colorBlue) 0 0 50px -25px;
         }
     }
     .connection__main-wrap{
