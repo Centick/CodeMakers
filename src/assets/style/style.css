@@ -774,4 +774,8 @@ p{
         width: 50px;
         height: 50px;
     }
+
+    .project__main_wrap{
+        grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    }
 }

@@ -653,7 +653,7 @@
             padding: 4px 10px;
         }
         .video__main_wrap{
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
         }
     }
 
