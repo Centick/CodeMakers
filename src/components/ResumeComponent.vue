@@ -4,14 +4,14 @@
         <div class="container skills__container">
             <div class="skills_block--sticky_parent">
                 <div class="skills_block skills_block--sticky">
-                    <h2><span class="blue">_</span>Наши Скилы&nbsp;<span class="and blue">&</span>&nbsp;Опыт</h2>
+                    <h2><span class="blue">_</span>Скилы&nbsp;<span class="and blue">&</span>&nbsp;Опыт</h2>
                     <div class="skills__inner">
                         <div class="skills-inner__img_wrap">
                             <img class="skills-inner__img" :src="`/img/skills/${skill_active.icon}`" :alt="skill_active.title">
                         </div>
                         <p class="skills-inner__text">{{ skill_active.description }}</p>
                     </div>
-                    <h3>Скилы</h3>
+                    <h3>Стек технологий</h3>
                     <div class="skills_wrap-skils">
                         <div @click="setActiveSkill(skills_datum.id)" class="skills_block-skils" :class="{'skills_block-skils_active': skill_active.id === skills_datum.id}" :key="skills_datum.id" v-for="skills_datum in skills_data">
                             <img :src="`/img/skills/${skills_datum.icon}`" :alt="skills_datum.title">
@@ -22,53 +22,88 @@
 
             <div class="skills_block">
                 <div class="skills_block-experience">
-                    <h3>Опыт</h3>
+                    <h3>Мероприятия</h3>
                 </div>
-                <div class="skills_block-experience">
+                <div class="skills_block-experience">  
                     <div class="experience">
-                        <p>25.11.2023</p>
+                        <p>30.11.2024</p>
                         <div class="experience_description">
-                            <h4><span class="blue">«</span> Minin Code <span class="blue">»</span> - 1 место</h4>
-                            <p>Участники хакатона "Минин Code" представляют собой молодых программистов в возрасте от 12 до 18 лет. Участие в мероприятии позволяет им демонстрировать профессиональные навыки, расширять сеть контактов и набираться опыта в командной работе.</p>
+                            <h4>Хакатон <span class="blue">« </span>MininCode <span class="blue">»</span> - 3 место</h4>
+                            <p>На протяжении двух дней юные веб-разработчики разрабатывали прототип платформы MininCode – ресурса для школьников и студентов, которые хотят заниматься IT. Навигационное меню, список направлений, блоки с мероприятиями и новостями, разграничение пользователей по ролям, добавление организаций, интерактивная карта, панель администрирования, далеко не весь список задач, с которыми ребята успешно справились при выполнении практического задания...</p>
+                            <a href="https://vk.com/jun48?w=wall-154387872_1014" target="_blank">Подробнее</a>
                         </div>
                     </div>
                 </div>
-                <div class="skills_block-experience">
-                    <div class="experience">
-                        <p>17.12.2023</p>
-                        <div class="experience_description">
-                            <h4><span class="blue">«</span> Taskills <span class="blue">»</span> - 1 место</h4>
-                            <p>Всероссийский хакатон по информационным технологиям «TASKILLS» для учащихся образовательных учреждений (от 12 до 18 лет) в дистанционном формате и в два этапа: отборочный и финальный!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills_block-experience">
-                    <div class="experience">
-                        <p>24.08.2024</p>
-                        <div class="experience_description">
-                            <h4><span class="blue">«</span> ИТ вызов <span class="blue">»</span> - 1 место</h4>
-                            <p>Оффлайн хакатон для школьников и студентов в городе Ижевск. Возраст участников Хакатона: 15-20 лет включительно (на момент времени проведения мероприятия), которые интересуются сферой информационных технологий, имеют опыт в разработке сайтов и мобильных приложений.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills_block-experience">
-                    <div class="experience">
-                        <p>31.08.2024</p>
-                        <div class="experience_description">
-                            <h4><span class="blue">«</span> Про IT <span class="blue">»</span> - 1 место</h4>
-                            <p>Цель Хакатона – погружение школьников в процесс профессионального самоопределения с учетом стратегии социальноэкономического развития Липецкой области. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills_block-experience">
+                <div class="skills_block-experience">  
                     <div class="experience">
                         <p>02.11.2024</p>
                         <div class="experience_description">
-                            <h4><span class="blue">«</span> Digital Code <span class="blue">»</span> - 1 место</h4>
-                            <p>Целью проведения Хакатона является популяризация технической направленности основного и дополнительного образования для школьников, науки и знаний в области современных технологий в Липецкой области.</p>
+                            <h4>Хакатон <span class="blue">« </span>Digital Code <span class="blue">»</span> - 1 место</h4>
+                            <p>Обучающиеся Центра цифрового образования детей «IT-куб» приняли участие в финале III Регионального хакатона «Digital Code». «Digital Code» — это соревновательное мероприятие для школьников, которое направлено на популяризацию технической направленности образования и знаний в области современных технологий...</p>
+                            <a href="https://vk.com/wall-184246628_3383" target="_blank">Подробнее</a>
                         </div>
                     </div>
                 </div>
+                <div class="skills_block-experience">  
+                    <div class="experience">
+                        <p>31.08.2024</p>
+                        <div class="experience_description">
+                            <h4>Хакатон <span class="blue">« </span>Про_IT <span class="blue">»</span> - 1 место</h4>
+                            <p>Система управления проектами, стикер-пак для сувенирной продукции, центр ремесел и промыслов , робот-сортировщик, умный чат-бот, экспертиза промышленных объектов с помощью дронов. Такие задания получили участники второго регионального профориентационного хакатона «Про_IT», который стартовал сегодня...</p>
+                            <a href="https://vk.com/wall-184246628_3149" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills_block-experience">  
+                    <div class="experience">
+                        <p>25.08.2024</p>
+                        <div class="experience_description">
+                            <h4>Хакатон <span class="blue">« </span>ИТ-вызов <span class="blue">»</span> - 1 место</h4>
+                            <p>В Ижевском центре цифрового образования детей IT-куб завершился Всероссийский хакатон по кибербезопасности «ИТ-вызов». В очный этап хакатона трека «Веб-разработка» вышли 8 команд, 7 из них студенты СПО и ВУЗов. Липецкая команда юных программистов «Code Makers» (Илья Федосенко, Владислав Утяцкий, Жёлтиков Виталий) стала единственной, состоящей из школьников, но это не помешало ребятам занять победить...</p>
+                            <a href="https://vk.com/wall-184246628_3138" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills_block-experience">  
+                    <div class="experience">
+                        <p>28.06.2024</p>
+                        <div class="experience_description">
+                            <h4>Чемпионат <span class="blue">« </span>Профессионалы <span class="blue">»</span> - 2 место</h4>
+                            <p>Всероссийский этап чемпионата состоялся в Калужской области. В дни состязаний Илья продемонстрировал профессиональные навыки в дизайне, вёрстке Интернет-страниц, клиентском и серверном программировании. Темы заданий были связаны с Годом семьи в России, космонавтикой и принимающим чемпионат регионом...</p>
+                            <a href="https://vk.com/wall-101357217_11510" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills_block-experience">  
+                    <div class="experience">
+                        <p>02.05.2024</p>
+                        <div class="experience_description">
+                            <h4>Смена <span class="blue">«</span> Искусство кода <span class="blue">»</span> - 3 место</h4>
+                            <p>Во Всероссийском детском центре «Океан» завершилась 5 смена по дополнительной общеразвивающей программе «Искусство кода». Участники погрузились в увлекательный мир программирования, создавая инновационные проекты под руководством опытных наставников...</p>
+                            <a href="https://vk.com/wall-184246628_2736" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills_block-experience">  
+                    <div class="experience">
+                        <p>18.12.2023</p>
+                        <div class="experience_description">
+                            <h4>Хакатон <span class="blue">«</span> Taskills <span class="blue">»</span> - 1 место</h4>
+                            <p>5 языков программирования и 16 вспомогательных веб-технологий потребовались учащимся Центра цифрового образования детей «IT-куб» Центра дополнительного образования Липецкой области, чтобы победить во Всероссийском хакатоне по информационным технологиям «TASKILLS»...</p>
+                            <a href="https://vk.com/wall-61647890_56926" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills_block-experience">
+                    <div class="experience">
+                        <p>24.11.2023</p>
+                        <div class="experience_description">
+                            <h4>Хакатон <span class="blue">«</span> Minin Code <span class="blue">»</span> - 1 место</h4>
+                            <p>Участники хакатона на протяжении двух дней работали по различным кейсам, а сегодня презентовали свои наработки! Ребятам нобходимо было создать веб-сайт личного блога, ориентированного на путешествия. Функционал блога должен позволять пользователю публиковать, редактировать, удалять статьи о своих путешествиях, добавлять фотографии и делиться своими впечатлениями с аудиторией...</p>
+                            <a href="https://vk.com/wall-184246628_2411" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                </div>                
             </div>           
         </div>
     </div>
