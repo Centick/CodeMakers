@@ -17,12 +17,12 @@
                 </div>
                 <span class="burger_btn" :class="{'burger_btn--open': isBurgerOpen}" @click="isBurgerOpen = !isBurgerOpen"></span>
                 <div class="burger_menu">
-                    <a class="link header_link header-section-1" href="#home">Главная</a>
-                    <a class="link header_link header-section-1" href="#about">Команда</a>
-                    <a class="link header_link header-section-1" href="#resume">Скилы</a>
-                    <a class="link header_link header-section-2" href="#history">История</a>
-                    <a class="link header_link header-section-2" href="#projects">Проекты</a>
-                    <a class="link header_link header-section-2" href="#contacts">Контакты</a>
+                    <a class="link header_link header-section-1" @click="getClickFromHeader($event, anchors.homeAnch)" href="#home">Главная</a>
+                    <a class="link header_link header-section-1" @click="getClickFromHeader($event, anchors.aboutAnch)" href="#about">Команда</a>
+                    <a class="link header_link header-section-1" @click="getClickFromHeader($event, anchors.resumeAnch)" href="#resume">Скилы</a>
+                    <a class="link header_link header-section-2" @click="getClickFromHeader($event, anchors.historyAnch)" href="#history">История</a>
+                    <a class="link header_link header-section-2" @click="getClickFromHeader($event, anchors.projectsAnch)" href="#projects">Проекты</a>
+                    <a class="link header_link header-section-2" @click="getClickFromHeader($event, anchors.contactsAnch)" href="#contacts">Контакты</a>
                 </div>
             </nav>
         </div>

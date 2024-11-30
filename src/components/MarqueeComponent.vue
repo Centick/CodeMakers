@@ -163,6 +163,18 @@
             gap: 10px;
         }
     }
+    @media(max-width: 576px){
+        .wrap{
+            transform: rotate(-4deg);
+            position: absolute;
+            width: 100%;
+        }
+        .marquee_parent{
+            width: 100%;
+            position: relative;
+            padding: 100px 0;
+        }
+    }
 
 </style>
 <script setup lang="ts">
