@@ -352,7 +352,7 @@
     // Function For Future Backend
     function getVideos(): void {
         videos.value = [
-            { id: 1, title: "Видео", src: '1.mp4', img: '1.png' },
+            { id: 1, title: "Видео", src: 'https://vkvideo.ru/video_ext.php?oid=19529988&id=456240052&hd=2&autoplay=1', img: '1.png' },
         ];
     }
 

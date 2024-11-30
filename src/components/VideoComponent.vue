@@ -1,7 +1,7 @@
 <template>
     <div class="section video-modal__section">
         <div class="cross" @click="close()">&#215;</div>
-        <video :src="`/videos/${current_video.src}`" controls class="container video-modal__video"></video>
+        <iframe class="video-modal__video" :src="current_video.src" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
     </div>
 </template>
 
@@ -50,9 +50,9 @@
     .video-modal__video{
         width: 100%;
         max-width: 1280px;
-        padding: 0 50px;
-        aspect-ratio: 16 / 9;
-        max-height: 80vh;
+        //padding: 0 50px;
+        //aspect-ratio: 16 / 9;
+        height: 70vh;
     }
     .cross{
         position: absolute;
