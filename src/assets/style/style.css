@@ -46,6 +46,7 @@ body{
     width: 100%;
     padding: 100px 0;
     position: relative;
+    z-index: 2;
 }
 
 .container{
@@ -146,7 +147,8 @@ p{
 
 .header__section{
     padding: 20px 0;
-    
+    position: fixed;
+    z-index: 9;
 }
 
 .header__container{
@@ -203,22 +205,30 @@ p{
 }
 @keyframes banner_img {
     0%{
-        filter: blur(0px);
+        background-color: rgba(26, 26, 26, 0);
     }
     100%{
-        filter: blur(4px);
+        background-color: rgba(26, 26, 26, 0.5);
     }
 }
 .banner_img{
     position: absolute;
     top: 5vh;
-    left: 15vw;
-    width: 70%; 
+    height: 105vh;
     pointer-events: none;
     z-index: -1;
     opacity: .5;
-    filter: blur(4px);
-    animation: banner_img 1.5s ease;
+}
+.banner__section::before{
+    content: '';
+    width: 100%;
+    height: 110vh;
+    background-color: rgba(26, 26, 26, 0.5);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+    animation: banner_img 3s ease;
 }
 /* about us */
 .about-us__container{
