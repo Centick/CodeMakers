@@ -1,66 +1,68 @@
 <template>
-    <div class="wrap">
-        <div class="items-wrap">
-            <div class="items marquee">
-                <div class="item">TypeScript</div>
-                <div class="item">Vue</div>
-                <div class="item">HTML</div>
-                <div class="item">CSS</div>
-                <div class="item">Laravel</div>
-                <div class="item">Django</div>
-                <div class="item">Rest API</div>
-                <div class="item">SPA</div>
-                <div class="item">JavaScript</div>
-                <div class="item">JQuery</div>
-                <div class="item">Pinia</div>
-                <div class="item">PHP</div>
-                <div class="item">MySQL</div>
-            </div>
+    <div class="marquee_parent">
+        <div class="wrap">
+            <div class="items-wrap">
+                <div class="items marquee">
+                    <div class="item">TypeScript</div>
+                    <div class="item">Vue</div>
+                    <div class="item">HTML</div>
+                    <div class="item">CSS</div>
+                    <div class="item">Laravel</div>
+                    <div class="item">Django</div>
+                    <div class="item">Rest API</div>
+                    <div class="item">SPA</div>
+                    <div class="item">JavaScript</div>
+                    <div class="item">JQuery</div>
+                    <div class="item">Pinia</div>
+                    <div class="item">PHP</div>
+                    <div class="item">MySQL</div>
+                </div>
 
-            <div aria-hidden="true" class="items marquee">
-                <div class="item">TypeScript</div>
-                <div class="item">Vue</div>
-                <div class="item">HTML</div>
-                <div class="item">CSS</div>
-                <div class="item">Laravel</div>
-                <div class="item">Django</div>
-                <div class="item">Rest API</div>
-                <div class="item">SPA</div>
-                <div class="item">JavaScript</div>
-                <div class="item">JQuery</div>
-                <div class="item">Pinia</div>
-                <div class="item">PHP</div>
-                <div class="item">MySQL</div>
+                <div aria-hidden="true" class="items marquee">
+                    <div class="item">TypeScript</div>
+                    <div class="item">Vue</div>
+                    <div class="item">HTML</div>
+                    <div class="item">CSS</div>
+                    <div class="item">Laravel</div>
+                    <div class="item">Django</div>
+                    <div class="item">Rest API</div>
+                    <div class="item">SPA</div>
+                    <div class="item">JavaScript</div>
+                    <div class="item">JQuery</div>
+                    <div class="item">Pinia</div>
+                    <div class="item">PHP</div>
+                    <div class="item">MySQL</div>
+                </div>
             </div>
-        </div>
-        <div class="items-wrap">
-            <div class="items marquee reverce">
-                <div class="item">Soft Skill</div>
-                <div class="item">Hard Skills</div>
-                <div class="item">Clear</div>
-                <div class="item">Quickly</div>
-                <div class="item">CodeMakers</div>
-                <div class="item">Best</div>
-                <div class="item">Perseverance</div>
-                <div class="item">Smart</div>
-                <div class="item">Teamwork</div>
-                <div class="item">United</div>
-                <div class="item">Friendly</div>
-                <div class="item">Communication</div>
-            </div>
-            <div aria-hidden="true" class="items marquee reverce">
-                <div class="item">Soft Skill</div>
-                <div class="item">Hard Skills</div>
-                <div class="item">Clear</div>
-                <div class="item">Quickly</div>
-                <div class="item">CodeMakers</div>
-                <div class="item">Best</div>
-                <div class="item">Perseverance</div>
-                <div class="item">Smart</div>
-                <div class="item">Teamwork</div>
-                <div class="item">United</div>
-                <div class="item">Friendly</div>
-                <div class="item">Communication</div>
+            <div class="items-wrap">
+                <div class="items marquee reverce">
+                    <div class="item">Soft Skill</div>
+                    <div class="item">Hard Skills</div>
+                    <div class="item">Clear</div>
+                    <div class="item">Quickly</div>
+                    <div class="item">CodeMakers</div>
+                    <div class="item">Best</div>
+                    <div class="item">Perseverance</div>
+                    <div class="item">Smart</div>
+                    <div class="item">Teamwork</div>
+                    <div class="item">United</div>
+                    <div class="item">Friendly</div>
+                    <div class="item">Communication</div>
+                </div>
+                <div aria-hidden="true" class="items marquee reverce">
+                    <div class="item">Soft Skill</div>
+                    <div class="item">Hard Skills</div>
+                    <div class="item">Clear</div>
+                    <div class="item">Quickly</div>
+                    <div class="item">CodeMakers</div>
+                    <div class="item">Best</div>
+                    <div class="item">Perseverance</div>
+                    <div class="item">Smart</div>
+                    <div class="item">Teamwork</div>
+                    <div class="item">United</div>
+                    <div class="item">Friendly</div>
+                    <div class="item">Communication</div>
+                </div>
             </div>
         </div>
     </div>
@@ -75,7 +77,10 @@
     }
     .wrap{
         transform: rotate(-4deg);
-        gap: 0px;
+    }
+    .marquee_parent{
+        width: 100%;
+        position: relative;
     }
     h1 {
         font-size: 2em;
@@ -160,3 +165,5 @@
     }
 
 </style>
+<script setup lang="ts">
+</script>

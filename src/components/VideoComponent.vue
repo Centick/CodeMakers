@@ -53,6 +53,7 @@
         //padding: 0 50px;
         //aspect-ratio: 16 / 9;
         height: 70vh;
+        background-color: black;
     }
     .cross{
         position: absolute;

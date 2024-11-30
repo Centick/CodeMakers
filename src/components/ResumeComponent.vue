@@ -4,7 +4,7 @@
         <div class="container skills__container">
             <div class="skills_block--sticky_parent">
                 <div class="skills_block skills_block--sticky">
-                    <h2><span class="blue">_</span>Скилы&nbsp;<span class="and blue">&</span>&nbsp;Опыт</h2>
+                    <h2><span class="blue">_</span>Скилы <span class="and blue">&</span> Опыт</h2>
                     <div class="skills__inner">
                         <div class="skills-inner__img_wrap">
                             <img class="skills-inner__img" :src="`/img/skills/${skill_active.icon}`" :alt="skill_active.title">
@@ -210,6 +210,13 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+        }
+    }
+    @media(max-width: 576px){
+
+        .skills-inner__img_wrap{
+            width: 70px;
+            height: 70px;
         }
     }
 </style>
